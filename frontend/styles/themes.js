@@ -1,7 +1,7 @@
-import { colors, shades } from 'frontend/styles/palette'
+import { colors, shades } from 'frontend/styles/palette';
 
-export const LIGHT = 'light'
-export const DARK = 'dark'
+export const LIGHT = 'light';
+export const DARK = 'dark';
 
 const sharedColors = {
     success: colors.green,
@@ -10,7 +10,7 @@ const sharedColors = {
     info: colors.blue,
 
     primary: colors.teal,
-}
+};
 
 export const THEMES = {
     [LIGHT]: {
@@ -47,8 +47,8 @@ export const THEMES = {
     },
     [DARK]: {
         ...sharedColors,
-        background: shades.grey90,
-        // background: shades.grey80,
+        // background: shades.grey90,
+        background: shades.grey80,
         backgroundActive: shades.grey60,
 
         textPrimary: shades.grey10,
@@ -78,4 +78,4 @@ export const THEMES = {
         displayBackground: shades.grey70,
         displayBackgroundActive: shades.grey60,
     },
-}
+};

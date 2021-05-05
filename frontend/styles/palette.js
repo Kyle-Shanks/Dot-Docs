@@ -12,7 +12,7 @@ export const shades = {
     grey80: '#1a202c',
     grey90: '#171923',
     black: '#000000',
-}
+};
 
 // Colors
 export const colors = {
@@ -43,4 +43,4 @@ export const colors = {
     purple: '#805ad5',
     purpleLite: '#af97e5',
     purpleDark: '#582eb5',
-}
+};

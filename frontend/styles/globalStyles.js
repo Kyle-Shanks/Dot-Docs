@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
-import { defaultTransition, TYPOGRAPHY } from 'frontend/styles/constants'
+import { createGlobalStyle } from 'styled-components';
+import { defaultTransition, TYPOGRAPHY } from 'frontend/styles/constants';
 
 const resetStyles = `
     /* http://meyerweb.com/eric/tools/css/reset/
@@ -50,7 +50,7 @@ const resetStyles = `
         border-collapse: collapse;
         border-spacing: 0;
     }
-`
+`;
 
 const typographyStyles = `
     font-family: ${TYPOGRAPHY.defaultFontFamily};
@@ -58,7 +58,7 @@ const typographyStyles = `
     line-height: ${TYPOGRAPHY.defaultLineHeight};
     font-weight: ${TYPOGRAPHY.defaultFontWeight};
     letter-spacing: ${TYPOGRAPHY.defaultLetterSpacing};
-`
+`;
 
 export const GlobalStyles = createGlobalStyle`
     ${resetStyles}
@@ -79,4 +79,4 @@ export const GlobalStyles = createGlobalStyle`
         outline: none;
         border: none;
     }
-`
+`;
