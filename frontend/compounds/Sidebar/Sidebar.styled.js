@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { Flex } from 'frontend/components/layout';
+import { Container, Flex } from 'frontend/components/layout';
 import { Header } from 'frontend/components/typography';
 import { SPACING, defaultTransition } from 'frontend/styles/constants';
-import { relaBlock, vertCenter, absFill } from 'frontend/styles/util';
+import { relaBlock, vertCenter } from 'frontend/styles/util';
 
 export const StyledContainer = styled(Flex)`
     flex-direction: column;
@@ -12,7 +12,7 @@ export const StyledContainer = styled(Flex)`
     overflow: auto;
 `;
 
-export const Logo = styled(Header)`
+export const HeaderLink = styled(Header)`
     cursor: pointer;
 
     &:hover {

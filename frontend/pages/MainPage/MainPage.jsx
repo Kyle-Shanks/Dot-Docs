@@ -4,6 +4,16 @@ import { withRouter, Switch, useRouteMatch } from 'react-router-dom';
 import { Flex } from 'frontend/components/layout';
 import Sidebar from 'frontend/compounds/Sidebar';
 import {
+    SPLASH_PATH,
+    OVERVIEW_PATH,
+    EXAMPLES_PATH,
+    COMPONENTS_PATH,
+    CORE_PATH,
+    EFFECTS_PATH,
+    INSTRUMENTS_PATH,
+    SOURCES_PATH,
+} from 'frontend/util/constants';
+import {
     Examples,
     Overview,
     Splash,
@@ -21,14 +31,14 @@ const BASE_CLASS_NAME = 'MainPage';
 // TODO: Need to add views for types and inputs
 
 const MainPage = ({ className, theme, toggleTheme }) => {
-    const splashMatch = useRouteMatch('/');
-    const overviewMatch = useRouteMatch('/overview');
-    const examplesMatch = useRouteMatch('/examples');
-    const componentsMatch = useRouteMatch('/components/:section');
-    const coreMatch = useRouteMatch('/core/:section');
-    const sourcesMatch = useRouteMatch('/sources/:section');
-    const instrumentsMatch = useRouteMatch('/instruments/:section');
-    const effectsMatch = useRouteMatch('/effects/:section');
+    const splashMatch = useRouteMatch(SPLASH_PATH);
+    const overviewMatch = useRouteMatch(OVERVIEW_PATH);
+    const examplesMatch = useRouteMatch(EXAMPLES_PATH);
+    const componentsMatch = useRouteMatch(COMPONENTS_PATH);
+    const coreMatch = useRouteMatch(CORE_PATH);
+    const sourcesMatch = useRouteMatch(SOURCES_PATH);
+    const instrumentsMatch = useRouteMatch(INSTRUMENTS_PATH);
+    const effectsMatch = useRouteMatch(EFFECTS_PATH);
 
     return (
         <Flex className={`${BASE_CLASS_NAME} ${className}`.trim()}>
@@ -38,21 +48,11 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                     {splashMatch && splashMatch.isExact && <Splash />}
                     {overviewMatch && overviewMatch.isExact && <Overview />}
                     {examplesMatch && examplesMatch.isExact && <Examples />}
-                    {coreMatch && coreMatch.isExact && (
-                        <CoreView section={coreMatch.params.section} />
-                    )}
-                    {componentsMatch && componentsMatch.isExact && (
-                        <ComponentsView section={componentsMatch.params.section} />
-                    )}
-                    {sourcesMatch && sourcesMatch.isExact && (
-                        <SourcesView section={sourcesMatch.params.section} />
-                    )}
-                    {instrumentsMatch && instrumentsMatch.isExact && (
-                        <InstrumentsView section={instrumentsMatch.params.section} />
-                    )}
-                    {effectsMatch && effectsMatch.isExact && (
-                        <EffectsView section={effectsMatch.params.section} />
-                    )}
+                    {coreMatch && <CoreView />}
+                    {componentsMatch && <ComponentsView />}
+                    {sourcesMatch && <SourcesView />}
+                    {instrumentsMatch && <InstrumentsView />}
+                    {effectsMatch && <EffectsView />}
                     <NotFoundView />
                 </Switch>
             </MainContent>

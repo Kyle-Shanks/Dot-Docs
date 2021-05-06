@@ -5,9 +5,10 @@ import { Button, TextInput } from 'frontend/components/input';
 import { Container, Flex } from 'frontend/components/layout';
 import { Header, Icon, Text } from 'frontend/components/typography';
 import { SPACING, FONT_SIZE } from 'frontend/styles/constants';
+import { SPLASH_PATH } from 'frontend/util/constants';
 import { LIGHT } from 'frontend/styles/themes';
 import linkConfig from './sidebarLinkConfig';
-import { StyledContainer, Logo, LinkContainer, MenuLink } from './Sidebar.styled';
+import { StyledContainer, HeaderLink, LinkContainer, MenuLink } from './Sidebar.styled';
 
 const BASE_CLASS_NAME = 'Sidebar';
 
@@ -31,7 +32,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
                 <Flex align="center" justify="space-between" margin={`0 ${SPACING.m} ${SPACING.s}`}>
                     <Flex align="baseline" gap={SPACING.xs}>
                         {/* <Icon icon="Bolt" size="l" /> */}
-                        <Logo tag="h3" onClick={() => goToPath('/')}>Dot</Logo>
+                        <HeaderLink tag="h3" onClick={() => goToPath(SPLASH_PATH)}>Dot</HeaderLink>
                         <Text fontSize={FONT_SIZE.ml}>v0.1.0</Text>
                     </Flex>
                     <Button size="icon" variation="tertiary" onClick={toggleTheme}>
@@ -53,9 +54,13 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
             >
                 {linkConfig.map((linkSection) => (
                     <Container key={`linkSection-${linkSection.label}`}>
-                        <Header tag="h5" margin={`0 ${SPACING.m} ${SPACING.s}`}>
+                        <HeaderLink
+                            tag="h5"
+                            onClick={() => goToPath(linkSection.path || SPLASH_PATH)}
+                            margin={`0 ${SPACING.m} ${SPACING.s}`}
+                        >
                             {linkSection.label}
-                        </Header>
+                        </HeaderLink>
                         <Container>
                             {linkSection.links.map((link) => (
                                 <MenuLink

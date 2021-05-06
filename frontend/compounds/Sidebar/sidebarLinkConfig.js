@@ -1,3 +1,13 @@
+import {
+    OVERVIEW_PATH,
+    EXAMPLES_PATH,
+    COMPONENTS_PATH,
+    CORE_PATH,
+    EFFECTS_PATH,
+    INSTRUMENTS_PATH,
+    SOURCES_PATH,
+} from 'frontend/util/constants';
+
 const sidebarLinkConfig = [
     {
         label: 'Getting Started',
@@ -5,17 +15,17 @@ const sidebarLinkConfig = [
         links: [
             {
                 label: 'Overview',
-                path: '/overview',
+                path: OVERVIEW_PATH,
             },
             {
                 label: 'Examples',
-                path: '/examples',
+                path: EXAMPLES_PATH,
             },
         ],
     },
     {
         label: 'Core',
-        path: '/core',
+        path: CORE_PATH,
         links: [
             {
                 label: 'Channel Merger',
@@ -57,7 +67,7 @@ const sidebarLinkConfig = [
     },
     {
         label: 'Components',
-        path: '/components',
+        path: COMPONENTS_PATH,
         links: [
             {
                 label: 'Envelope',
@@ -75,7 +85,7 @@ const sidebarLinkConfig = [
     },
     {
         label: 'Sources',
-        path: '/sources',
+        path: SOURCES_PATH,
         links: [
             {
                 label: 'Buffer Source',
@@ -105,7 +115,7 @@ const sidebarLinkConfig = [
     },
     {
         label: 'Instruments',
-        path: '/instruments',
+        path: INSTRUMENTS_PATH,
         links: [
             {
                 label: 'FM Synth',
@@ -135,7 +145,7 @@ const sidebarLinkConfig = [
     },
     {
         label: 'Effects',
-        path: '/effects',
+        path: EFFECTS_PATH,
         links: [
             {
                 label: 'Chorus',
