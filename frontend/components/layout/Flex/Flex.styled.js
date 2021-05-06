@@ -7,4 +7,5 @@ export const StyledComponent = styled(Box)`
     flex-direction: ${({ direction }) => direction };
     justify-content: ${({ justify }) => justify };
     align-items: ${({ align }) => align };
+    gap: ${({ gap }) => gap };
 `;

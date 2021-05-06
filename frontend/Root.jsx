@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { HashRouter as Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-
-import SplashPage from 'frontend/pages/SplashPage';
+import MainPage from 'frontend/pages/MainPage';
 import { GlobalStyles } from 'frontend/styles/globalStyles';
 import { THEMES, LIGHT, DARK } from 'frontend/styles/themes';
 
@@ -14,7 +13,7 @@ const Root = () => {
         <Router>
             <ThemeProvider theme={THEMES[theme]}>
                 <GlobalStyles />
-                <SplashPage toggleTheme={toggleTheme} />
+                <MainPage toggleTheme={toggleTheme} />
             </ThemeProvider>
         </Router>
     );

@@ -19,6 +19,7 @@ Flex.propTypes = {
     // Style Props
     align: PropTypes.string,
     direction: PropTypes.string,
+    gap: PropTypes.string,
     justify: PropTypes.string,
     wrap: PropTypes.string,
 };
@@ -30,6 +31,7 @@ Flex.defaultProps = {
     // Style Props
     align: 'normal',
     direction: 'row',
+    gap: '0rem',
     justify: 'normal',
     wrap: 'wrap',
 };

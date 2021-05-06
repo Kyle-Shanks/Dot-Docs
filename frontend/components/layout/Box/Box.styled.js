@@ -12,7 +12,7 @@ export const StyledComponent = styled.div`
         ${({ fontSize }) => fontSize && `font-size: ${fontSize};`}
     }
 
-    & > * + * {
+    && > * + * {
         ${({ hGap }) => `margin-left: ${hGap}`};
         ${({ vGap }) => `margin-top: ${vGap}`};
     }

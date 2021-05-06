@@ -6,8 +6,6 @@ import { StyledComponent, Label } from './Tag.styled';
 const BASE_CLASS_NAME = 'Tag';
 const VARIATION = ['filled', 'outline'];
 
-// TODO: Add color prop and styles
-
 const Tag = ({ className, children, iconLeft, iconRight, variation, ...styleProps }) => {
 
     return (
