@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container } from 'frontend/components/layout';
 import { SPACING, defaultTransition } from 'frontend/styles/constants';
-import { relaBlock, vertCenter } from 'frontend/styles/util';
+import { relaBlock, vertCenter, absFill } from 'frontend/styles/util';
 
 export const StyledContainer = styled(Container)`
     position: fixed;
@@ -9,9 +9,15 @@ export const StyledContainer = styled(Container)`
     left: 0;
     bottom: 0;
     width: 18rem;
-    padding: ${SPACING.l} 0;
     box-shadow: 1px 0 0 0 ${({ theme }) => theme.border};
     overflow: auto;
+`;
+
+export const LinkContainer = styled(Container)`
+    ${absFill}
+    top: 10rem;
+    overflow: auto;
+    padding-bottom: ${SPACING.l};
 `;
 
 export const MenuLink = styled.a`
