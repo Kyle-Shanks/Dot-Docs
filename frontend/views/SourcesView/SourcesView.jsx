@@ -4,11 +4,11 @@ import { Container } from 'frontend/components/layout';
 import { Header, Text } from 'frontend/components/typography';
 import { SPACING } from 'frontend/styles/constants';
 
-const BASE_CLASS_NAME = 'Splash';
+const BASE_CLASS_NAME = 'SourcesView';
 
-const Splash = ({ className }) => (
+const SourcesView = ({ className }) => (
     <Container className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
-        <Header tag="h2" margin={`0 0 ${SPACING.l}`}>Splash View</Header>
+        <Header tag="h2" margin={`0 0 ${SPACING.l}`}>Sources View</Header>
         <Text margin={`0 0 ${SPACING.m}`} align="justify">
             Fakebit chip music atari sequencer magfest famitracker dmg circuit bending wav channel blip blop analog software. 2a03 aesthetic slamdunk lifestyle anamanaguchi glitch lofi 16-bit blip blop nes magfest moe moe kyunstep amiga software arpeggio. Sequencer ymck lsdj amiga blip fest 16-bit hexadecimal dmg arpeggio trash80 nintendocore circuit bending. Analog video game pulse wave chipsters blip blop chip music triangle wave bweeew circuit bending 2a03 atari aesthetic tracker slamdunk lifestyle 16-bit.
         </Text>
@@ -18,12 +18,12 @@ const Splash = ({ className }) => (
     </Container>
 );
 
-Splash.propTypes = {
+SourcesView.propTypes = {
     className: PropTypes.string,
 };
 
-Splash.defaultProps = {
+SourcesView.defaultProps = {
     className: '',
 };
 
-export default Splash;
+export default SourcesView;

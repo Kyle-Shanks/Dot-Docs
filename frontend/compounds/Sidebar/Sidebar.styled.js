@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Container } from 'frontend/components/layout';
+import { Header } from 'frontend/components/typography';
 import { SPACING, defaultTransition } from 'frontend/styles/constants';
 import { relaBlock, vertCenter, absFill } from 'frontend/styles/util';
 
@@ -11,6 +12,14 @@ export const StyledContainer = styled(Container)`
     width: 18rem;
     box-shadow: 1px 0 0 0 ${({ theme }) => theme.border};
     overflow: auto;
+`;
+
+export const Logo = styled(Header)`
+    cursor: pointer;
+
+    &:hover {
+        color: ${({ theme }) => theme.primary};
+    }
 `;
 
 export const LinkContainer = styled(Container)`

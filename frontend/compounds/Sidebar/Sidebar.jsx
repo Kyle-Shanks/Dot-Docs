@@ -7,9 +7,11 @@ import { Header, Icon, Text } from 'frontend/components/typography';
 import { SPACING, FONT_SIZE } from 'frontend/styles/constants';
 import { LIGHT } from 'frontend/styles/themes';
 import linkConfig from './sidebarLinkConfig';
-import { StyledContainer, LinkContainer, MenuLink } from './Sidebar.styled';
+import { StyledContainer, Logo, LinkContainer, MenuLink } from './Sidebar.styled';
 
 const BASE_CLASS_NAME = 'Sidebar';
+
+// TODO: Add logic for link filtering
 
 const Sidebar = ({ className, theme, toggleTheme }) => {
     const history = useHistory();
@@ -29,7 +31,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
                 <Flex align="center" justify="space-between" margin={`0 ${SPACING.m} ${SPACING.s}`}>
                     <Flex align="baseline" gap={SPACING.xs}>
                         {/* <Icon icon="Bolt" size="l" /> */}
-                        <Header tag="h3">Dot</Header>
+                        <Logo tag="h3" onClick={() => goToPath('/')}>Dot</Logo>
                         <Text fontSize={FONT_SIZE.ml}>v0.1.0</Text>
                     </Flex>
                     <Button size="icon" variation="tertiary" onClick={toggleTheme}>
