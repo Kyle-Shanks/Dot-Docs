@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Container } from 'frontend/components/layout';
-import { SPACING } from 'frontend/styles/constants';
-import { relaBlock } from 'frontend/styles/util';
+import { SPACING, defaultTransition } from 'frontend/styles/constants';
+import { relaBlock, vertCenter } from 'frontend/styles/util';
 
 export const StyledContainer = styled(Container)`
     position: fixed;
@@ -9,7 +9,7 @@ export const StyledContainer = styled(Container)`
     left: 0;
     bottom: 0;
     width: 18rem;
-    padding: ${SPACING.m} 0;
+    padding: ${SPACING.l} 0;
     box-shadow: 1px 0 0 0 ${({ theme }) => theme.border};
     overflow: auto;
 `;
@@ -19,12 +19,22 @@ export const MenuLink = styled.a`
     color: ${({ active, theme }) => active ? theme.textPrimary : theme.textSecondary};
     padding: ${SPACING.xs} ${SPACING.l};
     text-decoration: none;
-    box-shadow: inset ${({ active }) => active ? '-3px' : '0px'} 0 0 0 ${({ theme }) => theme.borderActive};
-    // border-right: ${({ active }) => active ? '3px' : '0px'} solid ${({ theme }) => theme.borderActive};
+    // box-shadow: inset ${({ active }) => active ? '-3px' : '0px'} 0 0 0 ${({ theme }) => theme.primary};
     cursor: pointer;
 
     &:hover {
         color: ${({ theme }) => theme.textPrimary};
         text-decoration: underline;
+    }
+
+    &::after {
+        content: '';
+        ${vertCenter}
+        height: 0.375rem;
+        width: 0.375rem;
+        margin: 0 ${SPACING.s};
+        border-radius: 100%;
+        background-color: ${({ active, theme }) => active ? theme.primary : 'transparent'};
+        transition: ${defaultTransition};
     }
 `;

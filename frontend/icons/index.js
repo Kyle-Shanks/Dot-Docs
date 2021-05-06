@@ -18,8 +18,10 @@ import Download from './Download';
 import Edit from './Edit';
 import ExternalLink from './ExternalLink';
 import FileDownload from './FileDownload';
+import Moon from './Moon';
 import Search from './Search';
 import Settings from './Settings';
+import Sun from './Sun';
 import Upload from './Upload';
 import X from './X';
 
@@ -44,8 +46,10 @@ export default {
     Edit,
     ExternalLink,
     FileDownload,
+    Moon,
     Search,
     Settings,
+    Sun,
     Upload,
     X,
 };

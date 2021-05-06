@@ -8,12 +8,12 @@ import { MainContent } from './MainPage.styled';
 
 const BASE_CLASS_NAME = 'MainPage';
 
-const MainPage = ({ className, toggleTheme }) => {
+const MainPage = ({ className, theme, toggleTheme }) => {
     return (
         <Box className={`${BASE_CLASS_NAME} ${className}`.trim()}>
-            <Sidebar />
+            <Sidebar theme={theme} toggleTheme={toggleTheme} />
             <MainContent>
-                <Splash toggleTheme={toggleTheme} />
+                <Splash />
             </MainContent>
         </Box>
     );

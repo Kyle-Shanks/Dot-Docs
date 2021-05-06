@@ -13,7 +13,7 @@ const Root = () => {
         <Router>
             <ThemeProvider theme={THEMES[theme]}>
                 <GlobalStyles />
-                <MainPage toggleTheme={toggleTheme} />
+                <MainPage theme={theme} toggleTheme={toggleTheme} />
             </ThemeProvider>
         </Router>
     );
