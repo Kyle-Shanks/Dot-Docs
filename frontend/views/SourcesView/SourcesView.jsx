@@ -6,7 +6,7 @@ import { SPACING } from 'frontend/styles/constants';
 
 const BASE_CLASS_NAME = 'SourcesView';
 
-const SourcesView = ({ className }) => (
+const SourcesView = ({ className, section }) => (
     <Container className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
         <Header tag="h2" margin={`0 0 ${SPACING.l}`}>Sources View</Header>
         <Text margin={`0 0 ${SPACING.m}`} align="justify">
@@ -20,6 +20,7 @@ const SourcesView = ({ className }) => (
 
 SourcesView.propTypes = {
     className: PropTypes.string,
+    section: PropTypes.string.isRequired,
 };
 
 SourcesView.defaultProps = {

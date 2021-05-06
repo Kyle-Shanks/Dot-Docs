@@ -1,14 +1,12 @@
 import styled from 'styled-components';
-import { Container } from 'frontend/components/layout';
+import { Flex } from 'frontend/components/layout';
 import { Header } from 'frontend/components/typography';
 import { SPACING, defaultTransition } from 'frontend/styles/constants';
 import { relaBlock, vertCenter, absFill } from 'frontend/styles/util';
 
-export const StyledContainer = styled(Container)`
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
+export const StyledContainer = styled(Flex)`
+    flex-direction: column;
+    height: 100vh;
     width: 18rem;
     box-shadow: 1px 0 0 0 ${({ theme }) => theme.border};
     overflow: auto;
@@ -23,8 +21,9 @@ export const Logo = styled(Header)`
 `;
 
 export const LinkContainer = styled(Container)`
-    ${absFill}
-    top: 10rem;
+    ${relaBlock}
+    flex: 1 1 0;
+    width: 100%;
     overflow: auto;
     padding-bottom: ${SPACING.l};
 `;

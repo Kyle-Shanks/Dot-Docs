@@ -6,7 +6,7 @@ import { SPACING } from 'frontend/styles/constants';
 
 const BASE_CLASS_NAME = 'InstrumentsView';
 
-const InstrumentsView = ({ className }) => (
+const InstrumentsView = ({ className, section }) => (
     <Container className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
         <Header tag="h2" margin={`0 0 ${SPACING.l}`}>Instruments View</Header>
         <Text margin={`0 0 ${SPACING.m}`} align="justify">
@@ -20,6 +20,7 @@ const InstrumentsView = ({ className }) => (
 
 InstrumentsView.propTypes = {
     className: PropTypes.string,
+    section: PropTypes.string.isRequired,
 };
 
 InstrumentsView.defaultProps = {

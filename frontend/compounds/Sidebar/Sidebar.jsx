@@ -76,6 +76,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
 
 Sidebar.propTypes = {
     className: PropTypes.string,
+    theme: PropTypes.string.isRequired,
     toggleTheme: PropTypes.func.isRequired,
 };
 
