@@ -18,8 +18,6 @@ import {
 
 const BASE_CLASS_NAME = 'Sidebar';
 
-// TODO: Add logic for link filtering
-
 const Sidebar = ({ className, theme, toggleTheme }) => {
     const history = useHistory();
     const [linkFilter, setLinkFilter] = useState('');
@@ -27,7 +25,29 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
 
     const goToPath = (path) => {
         if (pathname !== path) history.push(path);
-    }
+    };
+
+    const filterLinks = (filterStr) => {
+        const str = filterStr.toLowerCase();
+        const output = [];
+
+        linkConfig.forEach((section) => {
+            if (section.label.toLowerCase().includes(str)) {
+                output.push(section);
+            } else {
+                const outputSection = {
+                    ...section,
+                    links: section.links.filter(({ label }) => label.toLowerCase().includes(str)),
+                };
+
+                if (outputSection.links.length) output.push(outputSection);
+            }
+        });
+
+        return output;
+    };
+
+    const filteredConfig = linkFilter ? filterLinks(linkFilter) : linkConfig;
 
     return (
         <StyledContainer className={`${BASE_CLASS_NAME} ${className}`.trim()}>
@@ -54,7 +74,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
                 className={`${BASE_CLASS_NAME}_link-container`}
                 vGap={SPACING.m}
             >
-                {linkConfig.map((linkSection) => (
+                {filteredConfig.map((linkSection) => (
                     <Container key={`linkSection-${linkSection.label}`}>
                         <HeaderLink
                             tag="h5"
