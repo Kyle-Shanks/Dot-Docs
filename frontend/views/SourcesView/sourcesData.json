@@ -1,0 +1,5777 @@
+[
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A source node that outputs signal based on a provided audio buffer.\nWrapper class for the native BufferSource audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial buffer value",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.buffer"
+      },
+      {
+        "title": "param",
+        "description": "Initial loop value",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.loop"
+      },
+      {
+        "title": "param",
+        "description": "Initial detune value for the source node",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.detune"
+      },
+      {
+        "title": "param",
+        "description": "Initial playback rate value",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.playbackRate"
+      },
+      {
+        "title": "param",
+        "description": "Property to autostart the source node",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.start"
+      },
+      {
+        "title": "params",
+        "description": "detune - Detune value of the audio\nplaybackRate - The speed that the audio is played back at",
+        "lineNumber": 12
+      },
+      {
+        "title": "returns",
+        "description": "BufferSource Node",
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "BufferSource"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 0
+      },
+      "end": {
+        "line": 27,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 123,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.buffer",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial buffer value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.loop",
+            "lineNumber": 8,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial loop value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.detune",
+            "lineNumber": 9,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial detune value for the source node"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.playbackRate",
+            "lineNumber": 10,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial playback rate value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.start",
+            "lineNumber": 11,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Property to autostart the source node"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "BufferSource Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "BufferSource"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "BufferSource",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Starts output from the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 52,
+              "column": 4
+            },
+            "end": {
+              "line": 55,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 56,
+                "column": 4
+              },
+              "end": {
+                "line": 56,
+                "column": 43
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "start",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "start",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#start"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Stops output from the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 58,
+              "column": 4
+            },
+            "end": {
+              "line": 61,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 62,
+                "column": 4
+              },
+              "end": {
+                "line": 62,
+                "column": 41
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "stop",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "stop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#stop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current buffer of the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Audio buffer",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 65,
+              "column": 4
+            },
+            "end": {
+              "line": 68,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 69,
+                "column": 4
+              },
+              "end": {
+                "line": 69,
+                "column": 46
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Audio buffer"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getBuffer",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "getBuffer",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#getBuffer"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current loop setting"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Loop value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 71,
+              "column": 4
+            },
+            "end": {
+              "line": 74,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 75,
+                "column": 4
+              },
+              "end": {
+                "line": 75,
+                "column": 42
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Loop value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getLoop",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "getLoop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#getLoop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current detune value"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Detune value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 77,
+              "column": 4
+            },
+            "end": {
+              "line": 80,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 81,
+                "column": 4
+              },
+              "end": {
+                "line": 81,
+                "column": 46
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Detune value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getDetune",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "getDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#getDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current playback rate"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Playback rate",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 83,
+              "column": 4
+            },
+            "end": {
+              "line": 86,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 87,
+                "column": 4
+              },
+              "end": {
+                "line": 87,
+                "column": 58
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Playback rate"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getPlaybackRate",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "getPlaybackRate",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#getPlaybackRate"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the buffer of the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Audio buffer",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              },
+              "name": "val"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 3,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 90,
+              "column": 4
+            },
+            "end": {
+              "line": 94,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 95,
+                "column": 4
+              },
+              "end": {
+                "line": 95,
+                "column": 55
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Audio buffer"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setBuffer",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "setBuffer",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#setBuffer"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the loop value of the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Loop value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              },
+              "name": "val"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 3,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 97,
+              "column": 4
+            },
+            "end": {
+              "line": 101,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 102,
+                "column": 4
+              },
+              "end": {
+                "line": 102,
+                "column": 51
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Loop value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setLoop",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "setLoop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#setLoop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the detune value of the source node\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "detune value",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 104,
+              "column": 4
+            },
+            "end": {
+              "line": 111,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 112,
+                "column": 4
+              },
+              "end": {
+                "line": 112,
+                "column": 78
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "detune value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setDetune",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "setDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#setDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the playback rate of the source node\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "playback rate",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 114,
+              "column": 4
+            },
+            "end": {
+              "line": 121,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 122,
+                "column": 4
+              },
+              "end": {
+                "line": 122,
+                "column": 90
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/BufferSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "playback rate"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setPlaybackRate",
+          "kind": "member",
+          "memberof": "BufferSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "BufferSource",
+              "kind": "class"
+            },
+            {
+              "name": "setPlaybackRate",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "BufferSource#setPlaybackRate"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "BufferSource",
+        "kind": "class"
+      }
+    ],
+    "namespace": "BufferSource"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A source node that outputs a constant signal that can be adjusted.\nWrapper class for the native ConstantSource audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial offset value",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.offset"
+      },
+      {
+        "title": "param",
+        "description": "Property to autostart the source node",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.start"
+      },
+      {
+        "title": "params",
+        "description": "offset - The offset of the output from the source node",
+        "lineNumber": 9
+      },
+      {
+        "title": "returns",
+        "description": "ConstantSource Node",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "ConstantSource"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 0
+      },
+      "end": {
+        "line": 20,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 0
+        },
+        "end": {
+          "line": 70,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/ConstantSource.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.offset",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial offset value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.start",
+            "lineNumber": 8,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Property to autostart the source node"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "ConstantSource Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "ConstantSource"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "ConstantSource",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Starts output from the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 41,
+              "column": 4
+            },
+            "end": {
+              "line": 44,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 45,
+                "column": 4
+              },
+              "end": {
+                "line": 45,
+                "column": 37
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/ConstantSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "start",
+          "kind": "member",
+          "memberof": "ConstantSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "ConstantSource",
+              "kind": "class"
+            },
+            {
+              "name": "start",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "ConstantSource#start"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Stops output from the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 47,
+              "column": 4
+            },
+            "end": {
+              "line": 50,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 51,
+                "column": 4
+              },
+              "end": {
+                "line": 51,
+                "column": 35
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/ConstantSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "stop",
+          "kind": "member",
+          "memberof": "ConstantSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "ConstantSource",
+              "kind": "class"
+            },
+            {
+              "name": "stop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "ConstantSource#stop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current offset value of the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Offset value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 54,
+              "column": 4
+            },
+            "end": {
+              "line": 57,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 58,
+                "column": 4
+              },
+              "end": {
+                "line": 58,
+                "column": 40
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/ConstantSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Offset value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getOffset",
+          "kind": "member",
+          "memberof": "ConstantSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "ConstantSource",
+              "kind": "class"
+            },
+            {
+              "name": "getOffset",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "ConstantSource#getOffset"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the offset value of the source node\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "offset value",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 61,
+              "column": 4
+            },
+            "end": {
+              "line": 68,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 69,
+                "column": 4
+              },
+              "end": {
+                "line": 69,
+                "column": 78
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/ConstantSource.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "offset value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setOffset",
+          "kind": "member",
+          "memberof": "ConstantSource",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "ConstantSource",
+              "kind": "class"
+            },
+            {
+              "name": "setOffset",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "ConstantSource#setOffset"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "ConstantSource",
+        "kind": "class"
+      }
+    ],
+    "namespace": "ConstantSource"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A source node that outputs low frequency oscillations for updating audio params.\nConsists of an oscilator connected to a gain node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial lfo rate",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.rate"
+      },
+      {
+        "title": "param",
+        "description": "Initial depth value",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.depth"
+      },
+      {
+        "title": "param",
+        "description": "Initial detune value",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.detune"
+      },
+      {
+        "title": "param",
+        "description": "Initial waveform",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.type"
+      },
+      {
+        "title": "param",
+        "description": "Property to autostart the source node",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.start"
+      },
+      {
+        "title": "params",
+        "description": "rate - Frequency of the oscillator\ndepth - Gain of the gain node\ndetune - Detune value of the oscillator",
+        "lineNumber": 12
+      },
+      {
+        "title": "returns",
+        "description": "LFO Node",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "LFO"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 15,
+        "column": 0
+      },
+      "end": {
+        "line": 32,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 0
+        },
+        "end": {
+          "line": 135,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.rate",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial lfo rate"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.depth",
+            "lineNumber": 8,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial depth value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.detune",
+            "lineNumber": 9,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial detune value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.type",
+            "lineNumber": 10,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial waveform"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.start",
+            "lineNumber": 11,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Property to autostart the source node"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "LFO Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "LFO"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "LFO",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Starts the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 61,
+              "column": 4
+            },
+            "end": {
+              "line": 64,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 65,
+                "column": 4
+              },
+              "end": {
+                "line": 65,
+                "column": 34
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "start",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "start",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#start"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Stops the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 67,
+              "column": 4
+            },
+            "end": {
+              "line": 70,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 71,
+                "column": 4
+              },
+              "end": {
+                "line": 71,
+                "column": 32
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "stop",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "stop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#stop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the rate of the LFO"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "LFO Rate",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 74,
+              "column": 4
+            },
+            "end": {
+              "line": 77,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 78,
+                "column": 4
+              },
+              "end": {
+                "line": 78,
+                "column": 42
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "LFO Rate"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getRate",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "getRate",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#getRate"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the detune of the LFO"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Detune",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 80,
+              "column": 4
+            },
+            "end": {
+              "line": 83,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 84,
+                "column": 4
+              },
+              "end": {
+                "line": 84,
+                "column": 46
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Detune"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getDetune",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "getDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#getDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the depth of the LFO"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Depth",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 86,
+              "column": 4
+            },
+            "end": {
+              "line": 89,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 90,
+                "column": 4
+              },
+              "end": {
+                "line": 90,
+                "column": 44
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Depth"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getDepth",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "getDepth",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#getDepth"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the waveform of the LFO"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Waveform",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 92,
+              "column": 4
+            },
+            "end": {
+              "line": 95,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 96,
+                "column": 4
+              },
+              "end": {
+                "line": 96,
+                "column": 38
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Waveform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getType",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "getType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#getType"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the rate of the lfo\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "rate",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 99,
+              "column": 4
+            },
+            "end": {
+              "line": 106,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 107,
+                "column": 4
+              },
+              "end": {
+                "line": 107,
+                "column": 81
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "rate"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setRate",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "setRate",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#setRate"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the detune of the lfo\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "detune",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 109,
+              "column": 4
+            },
+            "end": {
+              "line": 116,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 117,
+                "column": 4
+              },
+              "end": {
+                "line": 117,
+                "column": 60
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "detune"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setDetune",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "setDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#setDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the depth of the lfo\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "depth",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 119,
+              "column": 4
+            },
+            "end": {
+              "line": 126,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 127,
+                "column": 4
+              },
+              "end": {
+                "line": 127,
+                "column": 59
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "depth"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setDepth",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "setDepth",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#setDepth"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the waveform of the lfo"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Waveform",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "val"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 3,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 129,
+              "column": 4
+            },
+            "end": {
+              "line": 133,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 134,
+                "column": 4
+              },
+              "end": {
+                "line": 134,
+                "column": 44
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/LFO.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Waveform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setType",
+          "kind": "member",
+          "memberof": "LFO",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "LFO",
+              "kind": "class"
+            },
+            {
+              "name": "setType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "LFO#setType"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "LFO",
+        "kind": "class"
+      }
+    ],
+    "namespace": "LFO"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A source node that outputs three types of noise using a BufferSource node.\nCan output white, pink, or brown noise."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial noise type",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.type"
+      },
+      {
+        "title": "param",
+        "description": "Property to autostart the source node",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.start"
+      },
+      {
+        "title": "returns",
+        "description": "NoiseGenerator Node",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "NoiseGenerator"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 66,
+        "column": 0
+      },
+      "end": {
+        "line": 76,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 0
+        },
+        "end": {
+          "line": 131,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/NoiseGenerator.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.type",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial noise type"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.start",
+            "lineNumber": 8,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Property to autostart the source node"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "NoiseGenerator Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "NoiseGenerator"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "NoiseGenerator",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Starts output from the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 96,
+              "column": 4
+            },
+            "end": {
+              "line": 99,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 100,
+                "column": 4
+              },
+              "end": {
+                "line": 100,
+                "column": 43
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/NoiseGenerator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "start",
+          "kind": "member",
+          "memberof": "NoiseGenerator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "NoiseGenerator",
+              "kind": "class"
+            },
+            {
+              "name": "start",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "NoiseGenerator#start"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Stops output from the source node"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 102,
+              "column": 4
+            },
+            "end": {
+              "line": 105,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 106,
+                "column": 4
+              },
+              "end": {
+                "line": 106,
+                "column": 41
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/NoiseGenerator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "stop",
+          "kind": "member",
+          "memberof": "NoiseGenerator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "NoiseGenerator",
+              "kind": "class"
+            },
+            {
+              "name": "stop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "NoiseGenerator#stop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current noise type"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Noise type",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 109,
+              "column": 4
+            },
+            "end": {
+              "line": 112,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 113,
+                "column": 4
+              },
+              "end": {
+                "line": 113,
+                "column": 29
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/NoiseGenerator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Noise type"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getType",
+          "kind": "member",
+          "memberof": "NoiseGenerator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "NoiseGenerator",
+              "kind": "class"
+            },
+            {
+              "name": "getType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "NoiseGenerator#getType"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the noise type that is output"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Noise type (white, pink, brown)",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "val"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 116,
+              "column": 4
+            },
+            "end": {
+              "line": 119,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 120,
+                "column": 4
+              },
+              "end": {
+                "line": 130,
+                "column": 5
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/NoiseGenerator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Noise type (white, pink, brown)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setType",
+          "kind": "member",
+          "memberof": "NoiseGenerator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "NoiseGenerator",
+              "kind": "class"
+            },
+            {
+              "name": "setType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "NoiseGenerator#setType"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "NoiseGenerator",
+        "kind": "class"
+      }
+    ],
+    "namespace": "NoiseGenerator"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A source node that outputs signal of different waveforms and frequencies.\nWrapper class for the native Oscillator audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial waveform",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.type"
+      },
+      {
+        "title": "param",
+        "description": "Initial frequency value",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.frequency"
+      },
+      {
+        "title": "param",
+        "description": "Initial detune value",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.detune"
+      },
+      {
+        "title": "param",
+        "description": "Property to autostart the source node",
+        "lineNumber": 10,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.start"
+      },
+      {
+        "title": "params",
+        "description": "frequency - Frequency of the oscillator\ndetune - Detune value of the oscillator",
+        "lineNumber": 11
+      },
+      {
+        "title": "returns",
+        "description": "Oscillator Node",
+        "lineNumber": 14,
+        "type": {
+          "type": "NameExpression",
+          "name": "Oscillator"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 0
+      },
+      "end": {
+        "line": 26,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 0
+        },
+        "end": {
+          "line": 123,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.type",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial waveform"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.frequency",
+            "lineNumber": 8,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial frequency value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.detune",
+            "lineNumber": 9,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial detune value"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.start",
+            "lineNumber": 10,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Property to autostart the source node"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Oscillator Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Oscillator"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Oscillator",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Starts the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 50,
+              "column": 4
+            },
+            "end": {
+              "line": 53,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 54,
+                "column": 4
+              },
+              "end": {
+                "line": 54,
+                "column": 34
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "start",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "start",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#start"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Stops the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 56,
+              "column": 4
+            },
+            "end": {
+              "line": 59,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 60,
+                "column": 4
+              },
+              "end": {
+                "line": 60,
+                "column": 32
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "stop",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "stop",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#stop"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the oscillator frequency"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Frequency",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 63,
+              "column": 4
+            },
+            "end": {
+              "line": 66,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 67,
+                "column": 4
+              },
+              "end": {
+                "line": 67,
+                "column": 52
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Frequency"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getFrequency",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "getFrequency",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#getFrequency"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the detune of the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Oscillator detune",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 69,
+              "column": 4
+            },
+            "end": {
+              "line": 72,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 73,
+                "column": 4
+              },
+              "end": {
+                "line": 73,
+                "column": 46
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Oscillator detune"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getDetune",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "getDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#getDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the waveform of the oscillator (Alias for getType)"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Oscillator waveform",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 75,
+              "column": 4
+            },
+            "end": {
+              "line": 78,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 79,
+                "column": 4
+              },
+              "end": {
+                "line": 79,
+                "column": 38
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Oscillator waveform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getWaveform",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "getWaveform",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#getWaveform"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the waveform of the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Oscillator waveform",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 81,
+              "column": 4
+            },
+            "end": {
+              "line": 84,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 85,
+                "column": 4
+              },
+              "end": {
+                "line": 85,
+                "column": 33
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Oscillator waveform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getType",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "getType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#getType"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the frequency of the oscillator\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Frequency",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 88,
+              "column": 4
+            },
+            "end": {
+              "line": 95,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 96,
+                "column": 4
+              },
+              "end": {
+                "line": 96,
+                "column": 84
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Frequency"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setFrequency",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "setFrequency",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#setFrequency"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the detune of the oscillator\nUses timeUpdate method to allow for changes over time"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Detune",
+              "lineNumber": 4,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 5,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 6,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 98,
+              "column": 4
+            },
+            "end": {
+              "line": 105,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 106,
+                "column": 4
+              },
+              "end": {
+                "line": 106,
+                "column": 78
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Detune"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 5,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setDetune",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "setDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#setDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the waveform of the oscillator (Alias for setType)"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Waveform",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "val"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 3,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 108,
+              "column": 4
+            },
+            "end": {
+              "line": 112,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 113,
+                "column": 4
+              },
+              "end": {
+                "line": 113,
+                "column": 44
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Waveform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setWaveform",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "setWaveform",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#setWaveform"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the waveform of the oscillator"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Waveform",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "val"
+            },
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 3,
+              "type": null,
+              "errors": [
+                "Braces are not balanced"
+              ]
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 115,
+              "column": 4
+            },
+            "end": {
+              "line": 119,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 120,
+                "column": 4
+              },
+              "end": {
+                "line": 122,
+                "column": 5
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/sources/Oscillator.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Waveform"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setType",
+          "kind": "member",
+          "memberof": "Oscillator",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Oscillator",
+              "kind": "class"
+            },
+            {
+              "name": "setType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Oscillator#setType"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Oscillator",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Oscillator"
+  }
+]

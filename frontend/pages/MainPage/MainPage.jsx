@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter, Switch, useRouteMatch } from 'react-router-dom';
 import { Flex } from 'frontend/components/layout';
@@ -31,6 +31,7 @@ const BASE_CLASS_NAME = 'MainPage';
 // TODO: Need to add views for types and inputs
 
 const MainPage = ({ className, theme, toggleTheme }) => {
+    const contentContainer = useRef();
     const splashMatch = useRouteMatch(SPLASH_PATH);
     const overviewMatch = useRouteMatch(OVERVIEW_PATH);
     const examplesMatch = useRouteMatch(EXAMPLES_PATH);
@@ -40,19 +41,23 @@ const MainPage = ({ className, theme, toggleTheme }) => {
     const instrumentsMatch = useRouteMatch(INSTRUMENTS_PATH);
     const effectsMatch = useRouteMatch(EFFECTS_PATH);
 
+    const resetScroll = () => {
+        contentContainer.current.scrollTop = 0;
+    };
+
     return (
         <Flex className={`${BASE_CLASS_NAME} ${className}`.trim()}>
             <Sidebar theme={theme} toggleTheme={toggleTheme} />
-            <MainContent>
+            <MainContent ref={contentContainer}>
                 <Switch>
-                    {splashMatch && splashMatch.isExact && <Splash />}
-                    {overviewMatch && overviewMatch.isExact && <Overview />}
-                    {examplesMatch && examplesMatch.isExact && <Examples />}
-                    {coreMatch && <CoreView />}
-                    {componentsMatch && <ComponentsView />}
-                    {sourcesMatch && <SourcesView />}
-                    {instrumentsMatch && <InstrumentsView />}
-                    {effectsMatch && <EffectsView />}
+                    {splashMatch && splashMatch.isExact && <Splash resetScroll={resetScroll} />}
+                    {overviewMatch && overviewMatch.isExact && <Overview resetScroll={resetScroll} />}
+                    {examplesMatch && examplesMatch.isExact && <Examples resetScroll={resetScroll} />}
+                    {coreMatch && <CoreView resetScroll={resetScroll} />}
+                    {componentsMatch && <ComponentsView resetScroll={resetScroll} />}
+                    {sourcesMatch && <SourcesView resetScroll={resetScroll} />}
+                    {instrumentsMatch && <InstrumentsView resetScroll={resetScroll} />}
+                    {effectsMatch && <EffectsView resetScroll={resetScroll} />}
                     <NotFoundView />
                 </Switch>
             </MainContent>

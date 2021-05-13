@@ -44,7 +44,7 @@ export const StyledOuter = styled(Box)`
 export const StyledComponent = styled(Box)`
     margin: 0 auto;
     width: 100%;
-    max-width: ${({ size }) => widthMap[size]};;
+    ${({ size, wide }) => !wide && `max-width: ${widthMap[size]};`}
     border-radius: ${({ size }) => size === 'l' ? borderRadiusM : borderRadiusS};
     box-shadow: 0 0 0 1px ${({ theme }) => theme.border};
 

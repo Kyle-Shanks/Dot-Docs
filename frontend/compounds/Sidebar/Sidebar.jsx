@@ -3,12 +3,18 @@ import PropTypes from 'prop-types';
 import { useHistory } from 'react-router-dom';
 import { Button, TextInput } from 'frontend/components/input';
 import { Container, Flex } from 'frontend/components/layout';
-import { Header, Icon, Text } from 'frontend/components/typography';
+import { Icon, Text } from 'frontend/components/typography';
 import { SPACING, FONT_SIZE } from 'frontend/styles/constants';
 import { SPLASH_PATH } from 'frontend/util/constants';
 import { LIGHT } from 'frontend/styles/themes';
 import linkConfig from './sidebarLinkConfig';
-import { StyledContainer, HeaderLink, LinkContainer, MenuLink } from './Sidebar.styled';
+import {
+    StyledContainer,
+    HeaderLink,
+    InfoContainer,
+    LinkContainer,
+    MenuLink,
+} from './Sidebar.styled';
 
 const BASE_CLASS_NAME = 'Sidebar';
 
@@ -25,10 +31,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
 
     return (
         <StyledContainer className={`${BASE_CLASS_NAME} ${className}`.trim()}>
-            <Container
-                className={`${BASE_CLASS_NAME}_info-container`}
-                padding={`${SPACING.l} 0`}
-            >
+            <InfoContainer className={`${BASE_CLASS_NAME}_info-container`}>
                 <Flex align="center" justify="space-between" margin={`0 ${SPACING.m} ${SPACING.s}`}>
                     <Flex align="baseline" gap={SPACING.xs}>
                         {/* <Icon icon="Bolt" size="l" /> */}
@@ -46,8 +49,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
                     onChange={(val) => { setLinkFilter(val); }}
                     variation="filled"
                 />
-            </Container>
-
+            </InfoContainer>
             <LinkContainer
                 className={`${BASE_CLASS_NAME}_link-container`}
                 vGap={SPACING.m}

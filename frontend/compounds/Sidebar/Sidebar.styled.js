@@ -20,12 +20,18 @@ export const HeaderLink = styled(Header)`
     }
 `;
 
+export const InfoContainer = styled(Container)`
+    ${relaBlock}
+    padding: ${SPACING.l} 0;
+    box-shadow: 0 1px 0 0 ${({ theme }) => theme.border};
+`;
+
 export const LinkContainer = styled(Container)`
     ${relaBlock}
     flex: 1 1 0;
     width: 100%;
+    padding: ${SPACING.l} 0;
     overflow: auto;
-    padding-bottom: ${SPACING.l};
 `;
 
 export const MenuLink = styled.a`

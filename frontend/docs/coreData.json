@@ -1,0 +1,7552 @@
+[
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A node used to combine two audio signals into one.\nWrapper class for the native ChannelMerger audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "returns",
+        "description": "ChannelMerger Node",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "ChannelMerger"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 3,
+        "column": 0
+      },
+      "end": {
+        "line": 10,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/ChannelMerger.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "ChannelMerger Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "ChannelMerger"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "ChannelMerger",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "ChannelMerger",
+        "kind": "class"
+      }
+    ],
+    "namespace": "ChannelMerger"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A node used to split an audio signal into two.\nWrapper class for the native ChannelSplitter audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "returns",
+        "description": "ChannelSplitter Node",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "ChannelSplitter"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 3,
+        "column": 0
+      },
+      "end": {
+        "line": 10,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/ChannelSplitter.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "ChannelSplitter Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "ChannelSplitter"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "ChannelSplitter",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "ChannelSplitter",
+        "kind": "class"
+      }
+    ],
+    "namespace": "ChannelSplitter"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A Node used to reduce the dynamic range of a signal.\nWrapper class for the native Compressor audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const synth = new Dot.PolySynth(AC)\nconst chorus = new Dot.Chorus(AC, { amount: 0.4 })\nconst compressor = new Dot.Compressor(AC, { threshold: -32, ratio: 8 })\n\nDot.chain(synth, chorus, compressor, AC.destination)",
+        "lineNumber": 4
+      },
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 11,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 13,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial compression threshold in dB (default: -24)",
+        "lineNumber": 14,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.threshold"
+      },
+      {
+        "title": "param",
+        "description": "Initial compression ratio (default: 12)",
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.ratio"
+      },
+      {
+        "title": "param",
+        "description": "Initial compression knee value (default: 30)",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.knee"
+      },
+      {
+        "title": "param",
+        "description": "Initial compression attack time (default: 0.003)",
+        "lineNumber": 17,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.attack"
+      },
+      {
+        "title": "param",
+        "description": "Initial compression release time (default: 0.25)",
+        "lineNumber": 18,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.release"
+      },
+      {
+        "title": "params",
+        "description": "threshold - Compressor threshold\nratio - Compressor ratio\nknee - Compressor knee value\nattack - Compressor attack time\nrelease - Compressor release time",
+        "lineNumber": 19
+      },
+      {
+        "title": "returns",
+        "description": "Compressor Node",
+        "lineNumber": 25,
+        "type": {
+          "type": "NameExpression",
+          "name": "Compressor"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 11,
+        "column": 0
+      },
+      "end": {
+        "line": 37,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 141,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 11,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [
+      {
+        "description": "const synth = new Dot.PolySynth(AC)\nconst chorus = new Dot.Chorus(AC, { amount: 0.4 })\nconst compressor = new Dot.Compressor(AC, { threshold: -32, ratio: 8 })\n\nDot.chain(synth, chorus, compressor, AC.destination)"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 12,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 13,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.threshold",
+            "lineNumber": 14,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial compression threshold in dB (default: -24)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.ratio",
+            "lineNumber": 15,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial compression ratio (default: 12)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.knee",
+            "lineNumber": 16,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial compression knee value (default: 30)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.attack",
+            "lineNumber": 17,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial compression attack time (default: 0.003)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.release",
+            "lineNumber": 18,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial compression release time (default: 0.25)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Compressor Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Compressor"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Compressor",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the threshold in dB."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 65,
+              "column": 4
+            },
+            "end": {
+              "line": 68,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 69,
+                "column": 4
+              },
+              "end": {
+                "line": 69,
+                "column": 52
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getThreshold",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "getThreshold",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#getThreshold"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the compression ratio."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 71,
+              "column": 4
+            },
+            "end": {
+              "line": 74,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 75,
+                "column": 4
+              },
+              "end": {
+                "line": 75,
+                "column": 44
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getRatio",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "getRatio",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#getRatio"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current knee value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 77,
+              "column": 4
+            },
+            "end": {
+              "line": 80,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 81,
+                "column": 4
+              },
+              "end": {
+                "line": 81,
+                "column": 42
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getKnee",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "getKnee",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#getKnee"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the attack time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 83,
+              "column": 4
+            },
+            "end": {
+              "line": 86,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 87,
+                "column": 4
+              },
+              "end": {
+                "line": 87,
+                "column": 46
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getAttack",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "getAttack",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#getAttack"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the release time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 89,
+              "column": 4
+            },
+            "end": {
+              "line": 92,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 93,
+                "column": 4
+              },
+              "end": {
+                "line": 93,
+                "column": 48
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getRelease",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "getRelease",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#getRelease"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current gain reduction in dB."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 95,
+              "column": 4
+            },
+            "end": {
+              "line": 98,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 99,
+                "column": 4
+              },
+              "end": {
+                "line": 99,
+                "column": 50
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getReduction",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "getReduction",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#getReduction"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the threshold.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "target value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 102,
+              "column": 4
+            },
+            "end": {
+              "line": 107,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 108,
+                "column": 4
+              },
+              "end": {
+                "line": 108,
+                "column": 84
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "target value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setThreshold",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "setThreshold",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#setThreshold"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the compression ratio.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "target value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 110,
+              "column": 4
+            },
+            "end": {
+              "line": 115,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 116,
+                "column": 4
+              },
+              "end": {
+                "line": 116,
+                "column": 76
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "target value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setRatio",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "setRatio",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#setRatio"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the knee value.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "target value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 118,
+              "column": 4
+            },
+            "end": {
+              "line": 123,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 124,
+                "column": 4
+              },
+              "end": {
+                "line": 124,
+                "column": 74
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "target value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setKnee",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "setKnee",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#setKnee"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the attack time.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "target value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 126,
+              "column": 4
+            },
+            "end": {
+              "line": 131,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 132,
+                "column": 4
+              },
+              "end": {
+                "line": 132,
+                "column": 78
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "target value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setAttack",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "setAttack",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#setAttack"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the release time.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "target value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 134,
+              "column": 4
+            },
+            "end": {
+              "line": 139,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 140,
+                "column": 4
+              },
+              "end": {
+                "line": 140,
+                "column": 80
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Compressor.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "target value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setRelease",
+          "kind": "member",
+          "memberof": "Compressor",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Compressor",
+              "kind": "class"
+            },
+            {
+              "name": "setRelease",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Compressor#setRelease"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Compressor",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Compressor"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Wrapper class for the native Convolver audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 3,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 4,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "buffer (default: null)",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioBuffer"
+        },
+        "name": "opts.buffer"
+      },
+      {
+        "title": "param",
+        "description": "normalize (default: false)",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Boolean"
+        },
+        "name": "opts.normalize"
+      },
+      {
+        "title": "returns",
+        "description": "Convolver Node",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Convolver"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 8,
+        "column": 0
+      },
+      "end": {
+        "line": 17,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 0
+        },
+        "end": {
+          "line": 59,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Convolver.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 3,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 4,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.buffer",
+            "lineNumber": 6,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "buffer (default: null)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "AudioBuffer"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.normalize",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "normalize (default: false)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Boolean"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Convolver Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Convolver"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Convolver",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current buffer value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 36,
+              "column": 4
+            },
+            "end": {
+              "line": 39,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 40,
+                "column": 4
+              },
+              "end": {
+                "line": 40,
+                "column": 43
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Convolver.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getBuffer",
+          "kind": "member",
+          "memberof": "Convolver",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Convolver",
+              "kind": "class"
+            },
+            {
+              "name": "getBuffer",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Convolver#getBuffer"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current normalize value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 42,
+              "column": 4
+            },
+            "end": {
+              "line": 45,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 46,
+                "column": 4
+              },
+              "end": {
+                "line": 46,
+                "column": 49
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Convolver.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getNormalize",
+          "kind": "member",
+          "memberof": "Convolver",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Convolver",
+              "kind": "class"
+            },
+            {
+              "name": "getNormalize",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Convolver#getNormalize"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the convolver's buffer."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "buffer",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              },
+              "name": "val"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 49,
+              "column": 4
+            },
+            "end": {
+              "line": 52,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 53,
+                "column": 4
+              },
+              "end": {
+                "line": 53,
+                "column": 52
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Convolver.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "buffer"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "AudioBuffer"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setBuffer",
+          "kind": "member",
+          "memberof": "Convolver",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Convolver",
+              "kind": "class"
+            },
+            {
+              "name": "setBuffer",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Convolver#setBuffer"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Sets the normalize value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "normalize value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              },
+              "name": "val"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 54,
+              "column": 4
+            },
+            "end": {
+              "line": 57,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 58,
+                "column": 4
+              },
+              "end": {
+                "line": 58,
+                "column": 58
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Convolver.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "normalize value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Boolean"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setNormalize",
+          "kind": "member",
+          "memberof": "Convolver",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Convolver",
+              "kind": "class"
+            },
+            {
+              "name": "setNormalize",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Convolver#setNormalize"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Convolver",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Convolver"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A Node used to delay an incoming signal.\nWrapper class for the native Delay audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const synth = new Dot.Synth(AC)\nconst delay = new Dot.Delay(AC, { delayTime: 1 })\n\nDot.chain(synth, delay, AC.destination)",
+        "lineNumber": 4
+      },
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial delay time of the node (default: 0)",
+        "lineNumber": 13,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.delayTime"
+      },
+      {
+        "title": "params",
+        "description": "delayTime - Amount of time to delay the incoming signal",
+        "lineNumber": 14
+      },
+      {
+        "title": "returns",
+        "description": "Delay Node",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "Delay"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 0
+      },
+      "end": {
+        "line": 24,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 58,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Delay.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [
+      {
+        "description": "const synth = new Dot.Synth(AC)\nconst delay = new Dot.Delay(AC, { delayTime: 1 })\n\nDot.chain(synth, delay, AC.destination)"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 11,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 12,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.delayTime",
+            "lineNumber": 13,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial delay time of the node (default: 0)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Delay Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Delay"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Delay",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current delay time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Delay time",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 4
+            },
+            "end": {
+              "line": 47,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 48,
+                "column": 4
+              },
+              "end": {
+                "line": 48,
+                "column": 52
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Delay.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Delay time"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getDelayTime",
+          "kind": "member",
+          "memberof": "Delay",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Delay",
+              "kind": "class"
+            },
+            {
+              "name": "getDelayTime",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Delay#getDelayTime"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the delay time of the node.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "New delay time value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 51,
+              "column": 4
+            },
+            "end": {
+              "line": 56,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 57,
+                "column": 4
+              },
+              "end": {
+                "line": 57,
+                "column": 84
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Delay.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "New delay time value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setDelayTime",
+          "kind": "member",
+          "memberof": "Delay",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Delay",
+              "kind": "class"
+            },
+            {
+              "name": "setDelayTime",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Delay#setDelayTime"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Delay",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Delay"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Base class for Dot audio nodes."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 3,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "returns",
+        "description": "Audio Node",
+        "lineNumber": 4,
+        "type": {
+          "type": "NameExpression",
+          "name": "DotAudioNode"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 6,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 160,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+    },
+    "augments": [],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 3,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "DotAudioNode"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "DotAudioNode",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the name of the node."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Node name",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 14,
+              "column": 4
+            },
+            "end": {
+              "line": 17,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 18,
+                "column": 4
+              },
+              "end": {
+                "line": 18,
+                "column": 29
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Node name"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getName",
+          "kind": "member",
+          "memberof": "DotAudioNode",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "DotAudioNode",
+              "kind": "class"
+            },
+            {
+              "name": "getName",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "DotAudioNode#getName"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the array of params of the node.\nGives access to the audio params of the node that can be connected to."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Node params",
+              "lineNumber": 3,
+              "type": {
+                "type": "TypeApplication",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Object"
+                },
+                "applications": [
+                  {
+                    "type": "NameExpression",
+                    "name": "string"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioParam"
+                  }
+                ]
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 20,
+              "column": 4
+            },
+            "end": {
+              "line": 24,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 25,
+                "column": 4
+              },
+              "end": {
+                "line": 25,
+                "column": 33
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Node params"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "TypeApplication",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Object"
+                },
+                "applications": [
+                  {
+                    "type": "NameExpression",
+                    "name": "string"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioParam"
+                  }
+                ]
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getParams",
+          "kind": "member",
+          "memberof": "DotAudioNode",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "DotAudioNode",
+              "kind": "class"
+            },
+            {
+              "name": "getParams",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "DotAudioNode#getParams"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get an array of the inputs of this node."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "TypeApplication",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Array"
+                },
+                "applications": [
+                  {
+                    "type": "UnionType",
+                    "elements": [
+                      {
+                        "type": "NameExpression",
+                        "name": "DotAudioNode"
+                      },
+                      {
+                        "type": "NameExpression",
+                        "name": "AudioNode"
+                      },
+                      {
+                        "type": "NameExpression",
+                        "name": "AudioParam"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 27,
+              "column": 4
+            },
+            "end": {
+              "line": 30,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 31,
+                "column": 4
+              },
+              "end": {
+                "line": 31,
+                "column": 33
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "TypeApplication",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Array"
+                },
+                "applications": [
+                  {
+                    "type": "UnionType",
+                    "elements": [
+                      {
+                        "type": "NameExpression",
+                        "name": "DotAudioNode"
+                      },
+                      {
+                        "type": "NameExpression",
+                        "name": "AudioNode"
+                      },
+                      {
+                        "type": "NameExpression",
+                        "name": "AudioParam"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getInputs",
+          "kind": "member",
+          "memberof": "DotAudioNode",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "DotAudioNode",
+              "kind": "class"
+            },
+            {
+              "name": "getInputs",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "DotAudioNode#getInputs"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get an array of the outputs of this node."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": null,
+              "lineNumber": 2,
+              "type": {
+                "type": "TypeApplication",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Array"
+                },
+                "applications": [
+                  {
+                    "type": "UnionType",
+                    "elements": [
+                      {
+                        "type": "NameExpression",
+                        "name": "DotAudioNode"
+                      },
+                      {
+                        "type": "NameExpression",
+                        "name": "AudioNode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 33,
+              "column": 4
+            },
+            "end": {
+              "line": 36,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 37,
+                "column": 4
+              },
+              "end": {
+                "line": 37,
+                "column": 35
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": []
+              },
+              "title": "returns",
+              "type": {
+                "type": "TypeApplication",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Array"
+                },
+                "applications": [
+                  {
+                    "type": "UnionType",
+                    "elements": [
+                      {
+                        "type": "NameExpression",
+                        "name": "DotAudioNode"
+                      },
+                      {
+                        "type": "NameExpression",
+                        "name": "AudioNode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getOutputs",
+          "kind": "member",
+          "memberof": "DotAudioNode",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "DotAudioNode",
+              "kind": "class"
+            },
+            {
+              "name": "getOutputs",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "DotAudioNode#getOutputs"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Connect this node to a DotAudioNode, AudioNode, or AudioParam.\nAn array can be passed to connect to multiple destinations.\nOptionally pass output and input channels."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "example",
+              "description": "const synth = new Dot.Synth(AC)\nconst reverb = new Dot.Reverb(AC)\n\nsynth.connect(reverb) // Connect",
+              "lineNumber": 4
+            },
+            {
+              "title": "param",
+              "description": "The input/destination to connect to",
+              "lineNumber": 10,
+              "type": {
+                "type": "UnionType",
+                "elements": [
+                  {
+                    "type": "NameExpression",
+                    "name": "DotAudioNode"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioNode"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioParam"
+                  },
+                  {
+                    "type": "TypeApplication",
+                    "expression": {
+                      "type": "NameExpression",
+                      "name": "Array"
+                    },
+                    "applications": [
+                      {
+                        "type": "UnionType",
+                        "elements": [
+                          {
+                            "type": "NameExpression",
+                            "name": "DotAudioNode"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioNode"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioParam"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "name": "destination"
+            },
+            {
+              "title": "param",
+              "description": "Output channel to connect with",
+              "lineNumber": 12,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "outputNum"
+            },
+            {
+              "title": "param",
+              "description": "Input channel to connect to",
+              "lineNumber": 13,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "inputNum"
+            },
+            {
+              "title": "returns",
+              "description": "this",
+              "lineNumber": 14,
+              "type": {
+                "type": "NameExpression",
+                "name": "DotAudioNode"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 41,
+              "column": 4
+            },
+            "end": {
+              "line": 56,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 57,
+                "column": 4
+              },
+              "end": {
+                "line": 57,
+                "column": 99
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+          },
+          "augments": [],
+          "examples": [
+            {
+              "description": "const synth = new Dot.Synth(AC)\nconst reverb = new Dot.Reverb(AC)\n\nsynth.connect(reverb) // Connect"
+            }
+          ],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "destination",
+              "lineNumber": 10,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "The input/destination to connect to"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "UnionType",
+                "elements": [
+                  {
+                    "type": "NameExpression",
+                    "name": "DotAudioNode"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioNode"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioParam"
+                  },
+                  {
+                    "type": "TypeApplication",
+                    "expression": {
+                      "type": "NameExpression",
+                      "name": "Array"
+                    },
+                    "applications": [
+                      {
+                        "type": "UnionType",
+                        "elements": [
+                          {
+                            "type": "NameExpression",
+                            "name": "DotAudioNode"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioNode"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioParam"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "title": "param",
+              "name": "outputNum",
+              "lineNumber": 12,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Output channel to connect with"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "inputNum",
+              "lineNumber": 13,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Input channel to connect to"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "this"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "DotAudioNode"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "connect",
+          "kind": "member",
+          "memberof": "DotAudioNode",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "DotAudioNode",
+              "kind": "class"
+            },
+            {
+              "name": "connect",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "DotAudioNode#connect"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Disconnect this node from one if its connections.\nIf no destination is passed, all connections will be removed.\nOptionally pass output and input channels."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "example",
+              "description": "const synth = new Dot.Synth(AC)\nconst reverb = new Dot.Reverb(AC)\n\nsynth.connect(reverb) // Connect\nsynth.disconnect(reverb) // Disconnect",
+              "lineNumber": 4
+            },
+            {
+              "title": "param",
+              "description": "The input/destination to disconnect from",
+              "lineNumber": 11,
+              "type": {
+                "type": "UnionType",
+                "elements": [
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioParam"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioNode"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "DotAudioNode"
+                  },
+                  {
+                    "type": "TypeApplication",
+                    "expression": {
+                      "type": "NameExpression",
+                      "name": "Array"
+                    },
+                    "applications": [
+                      {
+                        "type": "UnionType",
+                        "elements": [
+                          {
+                            "type": "NameExpression",
+                            "name": "DotAudioNode"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioParam"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioNode"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              "name": "destination"
+            },
+            {
+              "title": "param",
+              "description": "Output channel to disconnect from",
+              "lineNumber": 13,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "outputNum"
+            },
+            {
+              "title": "param",
+              "description": "Input channel to disconnect from",
+              "lineNumber": 14,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "inputNum"
+            },
+            {
+              "title": "returns",
+              "description": "this",
+              "lineNumber": 15,
+              "type": {
+                "type": "NameExpression",
+                "name": "DotAudioNode"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 59,
+              "column": 4
+            },
+            "end": {
+              "line": 75,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 76,
+                "column": 4
+              },
+              "end": {
+                "line": 76,
+                "column": 105
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/DotAudioNode.js"
+          },
+          "augments": [],
+          "examples": [
+            {
+              "description": "const synth = new Dot.Synth(AC)\nconst reverb = new Dot.Reverb(AC)\n\nsynth.connect(reverb) // Connect\nsynth.disconnect(reverb) // Disconnect"
+            }
+          ],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "destination",
+              "lineNumber": 11,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "The input/destination to disconnect from"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "UnionType",
+                "elements": [
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioParam"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "AudioNode"
+                  },
+                  {
+                    "type": "NameExpression",
+                    "name": "DotAudioNode"
+                  },
+                  {
+                    "type": "TypeApplication",
+                    "expression": {
+                      "type": "NameExpression",
+                      "name": "Array"
+                    },
+                    "applications": [
+                      {
+                        "type": "UnionType",
+                        "elements": [
+                          {
+                            "type": "NameExpression",
+                            "name": "DotAudioNode"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioParam"
+                          },
+                          {
+                            "type": "NameExpression",
+                            "name": "AudioNode"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            {
+              "title": "param",
+              "name": "outputNum",
+              "lineNumber": 13,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Output channel to disconnect from"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "inputNum",
+              "lineNumber": 14,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Input channel to disconnect from"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "this"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "DotAudioNode"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "disconnect",
+          "kind": "member",
+          "memberof": "DotAudioNode",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "DotAudioNode",
+              "kind": "class"
+            },
+            {
+              "name": "disconnect",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "DotAudioNode#disconnect"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "DotAudioNode",
+        "kind": "class"
+      }
+    ],
+    "namespace": "DotAudioNode"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A Node used to filter frequencies of the incoming signal.\nWrapper class for the native Filter audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const synth = new Dot.Synth(AC)\nconst filter = new Dot.Filter(AC, { frequency: 3000, q: 1 })\n\nDot.chain(synth, filter, AC.destination)",
+        "lineNumber": 4
+      },
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial frequency value of the filter (default: 11000)",
+        "lineNumber": 13,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.frequency"
+      },
+      {
+        "title": "param",
+        "description": "Initial q value of the filter (default: 0)",
+        "lineNumber": 14,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.q"
+      },
+      {
+        "title": "param",
+        "description": "Initial detune of the filter (default: 0)",
+        "lineNumber": 15,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.detune"
+      },
+      {
+        "title": "param",
+        "description": "Initial gain of the filter (default: 0)",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.gain"
+      },
+      {
+        "title": "param",
+        "description": "Initial type of the filter (default: 'lowpass')",
+        "lineNumber": 17,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "opts.type"
+      },
+      {
+        "title": "params",
+        "description": "frequency - The cutoff frequency of the filter in Hz.\nq - The Q factor, or quality factor of the filter.\ndetune - The detune of the filter frequency in cents. (100 cents/semitone, 1200 cents/octave)\ngain - The gain of the filter in dB. Gain is only used if the filter type is set to lowshelf, highshelf, or peaking.\ntype - The type of the filter.\nFor more information, refer to the web audio api documentation.\n(https://developer.mozilla.org/en-US/docs/Web/API/BiquadFilterNode)",
+        "lineNumber": 18
+      },
+      {
+        "title": "returns",
+        "description": "Filter Node",
+        "lineNumber": 26,
+        "type": {
+          "type": "NameExpression",
+          "name": "Filter"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 12,
+        "column": 0
+      },
+      "end": {
+        "line": 39,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 0
+        },
+        "end": {
+          "line": 136,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [
+      {
+        "description": "const synth = new Dot.Synth(AC)\nconst filter = new Dot.Filter(AC, { frequency: 3000, q: 1 })\n\nDot.chain(synth, filter, AC.destination)"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 11,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 12,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.frequency",
+            "lineNumber": 13,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial frequency value of the filter (default: 11000)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.q",
+            "lineNumber": 14,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial q value of the filter (default: 0)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.detune",
+            "lineNumber": 15,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial detune of the filter (default: 0)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.gain",
+            "lineNumber": 16,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial gain of the filter (default: 0)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.type",
+            "lineNumber": 17,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial type of the filter (default: 'lowpass')"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "String"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Filter Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Filter"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Filter",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current frequency."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Frequency",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 66,
+              "column": 4
+            },
+            "end": {
+              "line": 69,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 70,
+                "column": 4
+              },
+              "end": {
+                "line": 70,
+                "column": 52
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Frequency"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getFrequency",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "getFrequency",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#getFrequency"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current q value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Q value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 72,
+              "column": 4
+            },
+            "end": {
+              "line": 75,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 76,
+                "column": 4
+              },
+              "end": {
+                "line": 76,
+                "column": 36
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Q value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getQ",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "getQ",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#getQ"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current gain."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Gain",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 78,
+              "column": 4
+            },
+            "end": {
+              "line": 81,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 82,
+                "column": 4
+              },
+              "end": {
+                "line": 82,
+                "column": 42
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Gain"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getGain",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "getGain",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#getGain"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current detune."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Detune",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 84,
+              "column": 4
+            },
+            "end": {
+              "line": 87,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 88,
+                "column": 4
+              },
+              "end": {
+                "line": 88,
+                "column": 46
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Detune"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getDetune",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "getDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#getDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current filter type."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Filter type",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 90,
+              "column": 4
+            },
+            "end": {
+              "line": 93,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 94,
+                "column": 4
+              },
+              "end": {
+                "line": 94,
+                "column": 36
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Filter type"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getType",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "getType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#getType"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the cutoff frequency of the filter.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "frequency value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 97,
+              "column": 4
+            },
+            "end": {
+              "line": 102,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 103,
+                "column": 4
+              },
+              "end": {
+                "line": 103,
+                "column": 84
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "frequency value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setFrequency",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "setFrequency",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#setFrequency"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the q value of the filter.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "q value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 105,
+              "column": 4
+            },
+            "end": {
+              "line": 110,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 111,
+                "column": 4
+              },
+              "end": {
+                "line": 111,
+                "column": 76
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "q value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setQ",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "setQ",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#setQ"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the gain of the filter.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "gain value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 113,
+              "column": 4
+            },
+            "end": {
+              "line": 118,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 119,
+                "column": 4
+              },
+              "end": {
+                "line": 119,
+                "column": 74
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "gain value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setGain",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "setGain",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#setGain"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the detune of the filter.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "detune value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 121,
+              "column": 4
+            },
+            "end": {
+              "line": 126,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 127,
+                "column": 4
+              },
+              "end": {
+                "line": 127,
+                "column": 78
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "detune value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setDetune",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "setDetune",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#setDetune"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the type of the filter."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "type value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "val"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 129,
+              "column": 4
+            },
+            "end": {
+              "line": 132,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 133,
+                "column": 4
+              },
+              "end": {
+                "line": 135,
+                "column": 5
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Filter.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "type value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setType",
+          "kind": "member",
+          "memberof": "Filter",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Filter",
+              "kind": "class"
+            },
+            {
+              "name": "setType",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Filter#setType"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Filter",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Filter"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A Node used to adjust the gain of the incoming signal.\nWrapper class for the native Gain audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const oscillator = new Dot.Oscillator(AC, { start: true })\nconst gain = new Dot.Gain(AC, { gain: 0.25 })\n\nDot.chain(oscillator, gain, AC.destination)",
+        "lineNumber": 4
+      },
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial gain of the node (default: 1)",
+        "lineNumber": 13,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.gain"
+      },
+      {
+        "title": "params",
+        "description": "gain - Gain adjustment of the incoming signal",
+        "lineNumber": 14
+      },
+      {
+        "title": "returns",
+        "description": "Gain Node",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "Gain"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 0
+      },
+      "end": {
+        "line": 24,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 58,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Gain.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [
+      {
+        "description": "const oscillator = new Dot.Oscillator(AC, { start: true })\nconst gain = new Dot.Gain(AC, { gain: 0.25 })\n\nDot.chain(oscillator, gain, AC.destination)"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 11,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 12,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.gain",
+            "lineNumber": 13,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial gain of the node (default: 1)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Gain Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Gain"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Gain",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current gain value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Gain value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 4
+            },
+            "end": {
+              "line": 47,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 48,
+                "column": 4
+              },
+              "end": {
+                "line": 48,
+                "column": 42
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Gain.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Gain value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getGain",
+          "kind": "member",
+          "memberof": "Gain",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Gain",
+              "kind": "class"
+            },
+            {
+              "name": "getGain",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Gain#getGain"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the gain of the node.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "gain value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 51,
+              "column": 4
+            },
+            "end": {
+              "line": 56,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 57,
+                "column": 4
+              },
+              "end": {
+                "line": 57,
+                "column": 74
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/Gain.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "gain value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setGain",
+          "kind": "member",
+          "memberof": "Gain",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Gain",
+              "kind": "class"
+            },
+            {
+              "name": "setGain",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Gain#setGain"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Gain",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Gain"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A Node used to adjust the pan of the incoming signal.\nWrapper class for the native StereoPanner audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const synth = new Dot.Synth(AC)\nconst panner = new Dot.StereoPanner(AC, { pan: 0.5 })\n\nDot.chain(synth, panner, AC.destination)",
+        "lineNumber": 4
+      },
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 11,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 12,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial pan value of the node (default: 0)",
+        "lineNumber": 13,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.pan"
+      },
+      {
+        "title": "params",
+        "description": "pan - Pan value (-1 for full left pan, 1 for full right pan)",
+        "lineNumber": 14
+      },
+      {
+        "title": "returns",
+        "description": "Pan Node",
+        "lineNumber": 16,
+        "type": {
+          "type": "NameExpression",
+          "name": "Pan"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 7,
+        "column": 0
+      },
+      "end": {
+        "line": 24,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 0
+        },
+        "end": {
+          "line": 58,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/StereoPanner.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 10,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [
+      {
+        "description": "const synth = new Dot.Synth(AC)\nconst panner = new Dot.StereoPanner(AC, { pan: 0.5 })\n\nDot.chain(synth, panner, AC.destination)"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 11,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 12,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.pan",
+            "lineNumber": 13,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial pan value of the node (default: 0)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Pan Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Pan"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "StereoPanner",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current pan value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Pan value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 4
+            },
+            "end": {
+              "line": 47,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 48,
+                "column": 4
+              },
+              "end": {
+                "line": 48,
+                "column": 40
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/StereoPanner.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Pan value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getPan",
+          "kind": "member",
+          "memberof": "StereoPanner",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "StereoPanner",
+              "kind": "class"
+            },
+            {
+              "name": "getPan",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "StereoPanner#getPan"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the pan of the node.\nUses timeUpdate method to allow for changes over time."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "New pan value",
+              "lineNumber": 3,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              },
+              "name": "val"
+            },
+            {
+              "title": "param",
+              "description": "update time in seconds (optional)",
+              "lineNumber": 4,
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              },
+              "name": "time"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 51,
+              "column": 4
+            },
+            "end": {
+              "line": 56,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 57,
+                "column": 4
+              },
+              "end": {
+                "line": 57,
+                "column": 72
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/StereoPanner.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 3,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "New pan value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            },
+            {
+              "title": "param",
+              "name": "time",
+              "lineNumber": 4,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "update time in seconds (optional)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "OptionalType",
+                "expression": {
+                  "type": "NameExpression",
+                  "name": "Number"
+                }
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setPan",
+          "kind": "member",
+          "memberof": "StereoPanner",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "StereoPanner",
+              "kind": "class"
+            },
+            {
+              "name": "setPan",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "StereoPanner#setPan"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "StereoPanner",
+        "kind": "class"
+      }
+    ],
+    "namespace": "StereoPanner"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A Node used to adjust the shape of the incoming signal based on a waveshaping curve.\nWrapper class for the native WaveShaper audio node."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      },
+      {
+        "title": "param",
+        "description": "Audio context",
+        "lineNumber": 5,
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        },
+        "name": "AC"
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 6,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Initial curve of the node (default: null)",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "Float32Array"
+        },
+        "name": "opts.curve"
+      },
+      {
+        "title": "param",
+        "description": "Initial oversample setting of the node (default: 'none')",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "opts.oversample"
+      },
+      {
+        "title": "returns",
+        "description": "WaveShaper Node",
+        "lineNumber": 9,
+        "type": {
+          "type": "NameExpression",
+          "name": "WaveShaper"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 9,
+        "column": 0
+      },
+      "end": {
+        "line": 19,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 0
+        },
+        "end": {
+          "line": 64,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/WaveShaper.js"
+    },
+    "augments": [
+      {
+        "title": "extends",
+        "description": null,
+        "lineNumber": 4,
+        "type": null,
+        "name": "DotAudioNode"
+      }
+    ],
+    "examples": [],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "AC",
+        "lineNumber": 5,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Audio context"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "AudioContext"
+        }
+      },
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 6,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.curve",
+            "lineNumber": 7,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial curve of the node (default: null)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Float32Array"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.oversample",
+            "lineNumber": 8,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Initial oversample setting of the node (default: 'none')"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "String"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "WaveShaper Node"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "WaveShaper"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "WaveShaper",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current curve."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Waveshaping Curve",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Float32Array"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 38,
+              "column": 4
+            },
+            "end": {
+              "line": 41,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 42,
+                "column": 4
+              },
+              "end": {
+                "line": 42,
+                "column": 42
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/WaveShaper.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Waveshaping Curve"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Float32Array"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getCurve",
+          "kind": "member",
+          "memberof": "WaveShaper",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "WaveShaper",
+              "kind": "class"
+            },
+            {
+              "name": "getCurve",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "WaveShaper#getCurve"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current oversample value."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Oversample value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 44,
+              "column": 4
+            },
+            "end": {
+              "line": 47,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 48,
+                "column": 4
+              },
+              "end": {
+                "line": 48,
+                "column": 52
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/WaveShaper.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Oversample value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getOversample",
+          "kind": "member",
+          "memberof": "WaveShaper",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "WaveShaper",
+              "kind": "class"
+            },
+            {
+              "name": "getOversample",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "WaveShaper#getOversample"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the node's waveshaping curve."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Waveshaping curve",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Float32Array"
+              },
+              "name": "val"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 51,
+              "column": 4
+            },
+            "end": {
+              "line": 54,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 55,
+                "column": 4
+              },
+              "end": {
+                "line": 55,
+                "column": 51
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/WaveShaper.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Waveshaping curve"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "Float32Array"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setCurve",
+          "kind": "member",
+          "memberof": "WaveShaper",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "WaveShaper",
+              "kind": "class"
+            },
+            {
+              "name": "setCurve",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "WaveShaper#setCurve"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Set the node's oversample setting."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "param",
+              "description": "Oversample setting",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              },
+              "name": "val"
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 57,
+              "column": 4
+            },
+            "end": {
+              "line": 60,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 61,
+                "column": 4
+              },
+              "end": {
+                "line": 63,
+                "column": 5
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/nodes/core/WaveShaper.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [
+            {
+              "title": "param",
+              "name": "val",
+              "lineNumber": 2,
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Oversample setting"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "type": {
+                "type": "NameExpression",
+                "name": "String"
+              }
+            }
+          ],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "setOversample",
+          "kind": "member",
+          "memberof": "WaveShaper",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "WaveShaper",
+              "kind": "class"
+            },
+            {
+              "name": "setOversample",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "WaveShaper#setOversample"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "WaveShaper",
+        "kind": "class"
+      }
+    ],
+    "namespace": "WaveShaper"
+  }
+]

@@ -28,40 +28,44 @@ const sidebarLinkConfig = [
         path: CORE_PATH,
         links: [
             {
-                label: 'Channel Merger',
-                path: '/channel-merger',
+                label: 'DotAudioNode',
+                path: '/DotAudioNode',
             },
             {
-                label: 'Channel Splitter',
-                path: '/channel-splitter',
+                label: 'ChannelMerger',
+                path: '/ChannelMerger',
+            },
+            {
+                label: 'ChannelSplitter',
+                path: '/ChannelSplitter',
             },
             {
                 label: 'Compressor',
-                path: '/comporessor',
+                path: '/Compressor',
             },
             {
                 label: 'Convolver',
-                path: '/convolver',
+                path: '/Convolver',
             },
             {
                 label: 'Delay',
-                path: '/delay',
+                path: '/Delay',
             },
             {
                 label: 'Filter',
-                path: '/filter',
+                path: '/Filter',
             },
             {
                 label: 'Gain',
-                path: '/gain',
+                path: '/Gain',
             },
             {
-                label: 'Stereo Panner',
-                path: '/stereo-panner',
+                label: 'StereoPanner',
+                path: '/StereoPanner',
             },
             {
-                label: 'Wave Shaper',
-                path: '/wave-shaper',
+                label: 'WaveShaper',
+                path: '/WaveShaper',
             },
         ],
     },
@@ -71,15 +75,15 @@ const sidebarLinkConfig = [
         links: [
             {
                 label: 'Envelope',
-                path: '/envelope',
+                path: '/Envelope',
             },
             {
-                label: 'Filter Envelope',
-                path: '/filter-envelope',
+                label: 'FilterEnvelope',
+                path: '/FilterEnvelope',
             },
             {
-                label: 'Gain Envelope',
-                path: '/gain-envelope',
+                label: 'GainEnvelope',
+                path: '/GainEnvelope',
             },
         ],
     },
@@ -88,29 +92,29 @@ const sidebarLinkConfig = [
         path: SOURCES_PATH,
         links: [
             {
-                label: 'Buffer Source',
-                path: '/buffer-source',
+                label: 'BufferSource',
+                path: '/BufferSource',
             },
             {
-                label: 'Constant Source',
-                path: '/constant-source',
+                label: 'ConstantSource',
+                path: '/ConstantSource',
             },
             {
                 label: 'LFO',
-                path: '/lfo',
+                path: '/LFO',
             },
             {
-                label: 'Noise Generator',
-                path: '/noise-generator',
+                label: 'NoiseGenerator',
+                path: '/NoiseGenerator',
             },
             {
                 label: 'Oscillator',
-                path: '/oscillator',
+                path: '/Oscillator',
             },
-            {
-                label: 'Signal Generator',
-                path: '/signal-generator',
-            },
+            // {
+            //     label: 'SignalGenerator',
+            //     path: '/SignalGenerator',
+            // },
         ],
     },
     {
@@ -118,28 +122,28 @@ const sidebarLinkConfig = [
         path: INSTRUMENTS_PATH,
         links: [
             {
-                label: 'FM Synth',
-                path: '/fm-synth',
+                label: 'FMSynth',
+                path: '/FMSynth',
             },
             {
-                label: 'Mono Synth',
-                path: '/mono-synth',
+                label: 'MonoSynth',
+                path: '/MonoSynth',
             },
             {
                 label: 'Osc',
-                path: '/osc',
+                path: '/Osc',
             },
             {
-                label: 'Poly Synth',
-                path: '/poly-synth',
+                label: 'PolySynth',
+                path: '/PolySynth',
             },
             {
-                label: 'Simple FM Synth',
-                path: '/simple-fm-synth',
+                label: 'SimpleFMSynth',
+                path: '/SimpleFMSynth',
             },
             {
                 label: 'Synth',
-                path: '/synth',
+                path: '/Synth',
             },
         ],
     },
@@ -149,35 +153,35 @@ const sidebarLinkConfig = [
         links: [
             {
                 label: 'Chorus',
-                path: '/chorus',
+                path: '/Chorus',
             },
             {
                 label: 'Distortion',
-                path: '/distortion',
+                path: '/Distortion',
             },
             {
                 label: 'EQ2',
-                path: '/eq2',
+                path: '/EQ2',
             },
             {
-                label: 'Feedback Delay',
-                path: '/feedback-delay',
+                label: 'FeedbackDelay',
+                path: '/FeedbackDelay',
             },
             {
                 label: 'Flanger',
-                path: '/flanger',
+                path: '/Flanger',
             },
             {
                 label: 'Limiter',
-                path: '/limiter',
+                path: '/Limiter',
             },
             {
-                label: 'Ping Pong Delay',
-                path: '/ping-pong-delay',
+                label: 'PingPongDelay',
+                path: '/PingPongDelay',
             },
             {
                 label: 'Reverb',
-                path: '/reverb',
+                path: '/Reverb',
             },
         ],
     },

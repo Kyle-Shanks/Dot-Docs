@@ -1,3 +1,6 @@
+import { keyframes } from 'styled-components';
+import { SPACING } from './constants';
+
 // General use style snippets for styled components
 export const relaBlock = `
     position: relative;
@@ -45,4 +48,10 @@ export const ellipsisStyles = `
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+`;
+
+// Animations
+export const fadeIn = keyframes`
+    from { opacity: 0; transform: translateY(${SPACING.m}); }
+    to { opacity: 1; transform: translateY(0); }
 `;

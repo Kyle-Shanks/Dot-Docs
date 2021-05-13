@@ -12,7 +12,7 @@ import {
 
 const SIZE = ['l', 'm', 's'];
 
-const Table = ({ className, children, size, ...styleProps }) => {
+const Table = ({ className, children, size, wide, ...styleProps }) => {
     const BASE_CLASS_NAME = 'Table';
 
     return (
@@ -20,6 +20,7 @@ const Table = ({ className, children, size, ...styleProps }) => {
             className={`${BASE_CLASS_NAME} ${className}`.trim()}
             tag="table"
             size={size}
+            wide={wide}
             {...styleProps}
         >
             {children}
@@ -31,12 +32,14 @@ Table.propTypes = {
     className: PropTypes.string,
     children: PropTypes.node,
     size: PropTypes.oneOf(SIZE),
+    wide: PropTypes.bool,
 };
 
 Table.defaultProps = {
     className: '',
     children: null,
     size: 'm',
+    wide: false,
 };
 
 export default Table;
