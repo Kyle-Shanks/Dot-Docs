@@ -2,9 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Table, TableHead, TableBody, TableRow, Th, Td } from 'frontend/components/data';
 import { Card } from 'frontend/components/display';
-import { Container } from 'frontend/components/layout';
+import { Container, Flex } from 'frontend/components/layout';
 import { Header, Text } from 'frontend/components/typography';
 import { FONT_SIZE, SPACING } from 'frontend/styles/constants';
+import NotFoundView from 'frontend/views/NotFoundView';
 import {
     ExampleCode,
     SectionHeader,
@@ -17,8 +18,7 @@ const BASE_CLASS_NAME = 'ClassView';
 // TODO: Create a method that can get type strings. Need to hande UnionType (An array of types)
 
 const ClassView = ({ className, data }) => {
-    console.log({ data });
-    if (!data) return <Text>No Data :(</Text>;
+    if (!data) return <NotFoundView />;
 
     const { description, examples, members, name, params, tags } = data;
     const paramsTag = tags.find((tag) => tag.title === 'params');
@@ -129,6 +129,11 @@ const ClassView = ({ className, data }) => {
                                     {method.returns.length > 0 && ` => ${method.returns[0].type.name}`}
                                 </Text>
                                 {getDescriptionText(method.description, `${method.namespace}-desc`)}
+                                {method.returns.length > 0 && (
+                                    <Flex gap={SPACING.xs}>
+                                        <Text>Returns:</Text>{getDescriptionText(method.returns[0].description)}
+                                    </Flex>
+                                )}
 
                                 {method.params.length > 0 && (
                                     <Container>
@@ -186,7 +191,7 @@ ClassView.propTypes = {
         params: PropTypes.array.isRequired,
         returns: PropTypes.array.isRequired,
         tags: PropTypes.array.isRequired,
-    }).isRequired,
+    }),
 };
 
 ClassView.defaultProps = {

@@ -19,12 +19,12 @@ export const SectionHeader = styled(Header)`
 `;
 
 export const ConstructorContainer = styled(Container)`
-    box-shadow: -4px 0 0 -2px ${({ theme }) => theme.border};
+    box-shadow: -5px 0 0 -2px ${({ theme }) => theme.border};
     padding: ${SPACING.xs} ${SPACING.sm};
 `;
 
 export const MethodContainer = styled(Container)`
-    box-shadow: -4px 0 0 -2px ${({ theme }) => theme.borderActive};
+    box-shadow: -5px 0 0 -2px ${({ theme }) => theme.borderActive};
     padding: ${SPACING.xs} ${SPACING.sm};
 `;
 
