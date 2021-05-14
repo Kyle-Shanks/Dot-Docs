@@ -4,7 +4,7 @@ import { Switch, useRouteMatch } from 'react-router-dom';
 import { Text } from 'frontend/components/typography';
 import { SPACING } from 'frontend/styles/constants';
 import ClassView from 'frontend/views/ClassView';
-import { StyledContainer } from 'frontend/views/views.styled';
+import { FadeContainer } from 'frontend/views/views.styled';
 
 const BASE_CLASS_NAME = 'SectionView';
 
@@ -26,7 +26,7 @@ const SectionView = ({ className, data, OverviewComponent, path, resetScroll }) 
     useEffect(resetScroll, [section]);
 
     return (
-        <StyledContainer className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
+        <FadeContainer className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
             <Switch>
                 {overviewMatch && overviewMatch.isExact && <OverviewComponent />}
                 {sectionMatch && sectionMatch.isExact && (
@@ -37,7 +37,7 @@ const SectionView = ({ className, data, OverviewComponent, path, resetScroll }) 
                 )}
                 <Text>Cannot find page</Text>
             </Switch>
-        </StyledContainer>
+        </FadeContainer>
     );
 };
 

@@ -3,7 +3,7 @@ import { Container } from 'frontend/components/layout';
 import { defaultTransition } from 'frontend/styles/constants';
 import { fadeIn } from 'frontend/styles/util';
 
-export const StyledContainer = styled(Container)`
+export const FadeContainer = styled(Container)`
     & > * {
         animation: ${fadeIn} ${defaultTransition} forwards;
     }
