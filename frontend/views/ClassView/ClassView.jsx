@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table, TableHead, TableBody, TableRow, Th, Td } from 'frontend/components/data';
+import { Editor, Table, TableHead, TableBody, TableRow, Th, Td } from 'frontend/components/data';
 import { Card } from 'frontend/components/display';
 import { Container, Flex } from 'frontend/components/layout';
 import { Header, Text } from 'frontend/components/typography';
@@ -57,9 +57,7 @@ const ClassView = ({ className, data }) => {
                     <SectionHeader tag="h3" margin={`0 0 ${SPACING.s}`}>Examples</SectionHeader>
                     <Container vGap={SPACING.l}>
                         {examples.map((example, idx) => (
-                            <Card key={`${name}-example${idx}`} padding={SPACING.ml}>
-                                <ExampleCode>{example.description}</ExampleCode>
-                            </Card>
+                            <Editor key={`${name}-example${idx}`} content={example.description} />
                         ))}
                     </Container>
                 </Container>
@@ -68,7 +66,8 @@ const ClassView = ({ className, data }) => {
             {/* Constructor */}
             <Container className={`${BASE_CLASS_NAME}__constructor`} margin={`0 0 ${SPACING.xl}`}>
                 <SectionHeader tag="h3" margin={`0 0 ${SPACING.s}`}>
-                    Constructor {extendsTag && `(extends ${extendsTag.name})`}
+                    Constructor({params.map((param) => param.name).join(', ')})
+                    {extendsTag && `(extends ${extendsTag.name})`}
                 </SectionHeader>
                 <Container vGap={SPACING.l}>
                     {params.map((param) => (
@@ -165,9 +164,7 @@ const ClassView = ({ className, data }) => {
                                         {method.examples.map((example, idx) => (
                                             <Container key={`${method.namespace}-example${idx}`}>
                                                 <Header tag="h5" margin={`0 0 ${SPACING.s}`}>Examples</Header>
-                                                <Card padding={SPACING.m}>
-                                                    <ExampleCode>{example.description}</ExampleCode>
-                                                </Card>
+                                                <Editor content={example.description} />
                                             </Container>
                                         ))}
                                     </Container>
