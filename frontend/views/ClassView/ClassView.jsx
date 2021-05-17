@@ -21,6 +21,7 @@ const ClassView = ({ className, data }) => {
     if (!data) return <NotFoundView />;
 
     const { description, examples, members, name, params, tags } = data;
+    const sortedMembers = [...members.instance].sort((a, b) => (a.name > b.name ? 1 : -1));
     const paramsTag = tags.find((tag) => tag.title === 'params');
     const extendsTag = tags.find((tag) => tag.title === 'extends');
 
@@ -67,7 +68,7 @@ const ClassView = ({ className, data }) => {
             <Container className={`${BASE_CLASS_NAME}__constructor`} margin={`0 0 ${SPACING.xl}`}>
                 <SectionHeader tag="h3" margin={`0 0 ${SPACING.s}`}>
                     Constructor({params.map((param) => param.name).join(', ')})
-                    {extendsTag && `(extends ${extendsTag.name})`}
+                    {extendsTag && ` extends ${extendsTag.name}`}
                 </SectionHeader>
                 <Container vGap={SPACING.l}>
                     {params.map((param) => (
@@ -117,11 +118,11 @@ const ClassView = ({ className, data }) => {
             )}
 
             {/* Methods */}
-            {members.instance.length > 0 && (
+            {sortedMembers.length > 0 && (
                 <Container className={`${BASE_CLASS_NAME}__methods`}>
                     <SectionHeader tag="h3" margin={`0 0 ${SPACING.s}`}>Methods</SectionHeader>
                     <Container vGap={SPACING.l}>
-                        {members.instance.map((method) => (
+                        {sortedMembers.map((method) => (
                             <MethodContainer key={method.namespace} vGap={SPACING.m}>
                                 <Text fontSize={FONT_SIZE.l}>
                                     {method.name}({method.params.map((param) => param.name).join(', ')})

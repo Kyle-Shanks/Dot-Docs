@@ -2,14 +2,12 @@ import styled from 'styled-components';
 import { SPACING, borderRadiusS } from 'frontend/styles/constants';
 import { relaBlock } from 'frontend/styles/util';
 
-const EDITOR_BACKGROUND_COLOR = '#1c252c';
-
 export const ComponentContainer = styled.div`
     ${relaBlock}
     margin: auto;
-    background: ${EDITOR_BACKGROUND_COLOR};
+    background: ${({ theme }) => theme.editorBackground};
     border-radius: ${borderRadiusS};
-    box-shadow: 0 0 0 1px ${({ theme }) => theme.textPrimary};
+    box-shadow: 0 0 0 1px ${({ theme }) => theme.editorBorder};
     overflow: hidden;
 `;
 

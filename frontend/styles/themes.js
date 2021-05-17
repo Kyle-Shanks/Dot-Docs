@@ -8,8 +8,8 @@ const sharedColors = {
     warning: colors.orange,
     error: colors.red,
     info: colors.blue,
-
     primary: colors.teal,
+    editorBackground: shades.grey80,
 };
 
 export const THEMES = {
@@ -44,10 +44,11 @@ export const THEMES = {
         displayBorder: shades.grey30,
         displayBackground: shades.white,
         displayBackgroundActive: shades.grey20,
+
+        editorBorder: shades.grey80,
     },
     [DARK]: {
         ...sharedColors,
-        // background: shades.grey90,
         background: shades.grey80,
         backgroundActive: shades.grey60,
 
@@ -77,5 +78,7 @@ export const THEMES = {
         displayBorder: shades.grey50,
         displayBackground: shades.grey70,
         displayBackgroundActive: shades.grey60,
+
+        editorBorder: shades.grey40,
     },
 };
