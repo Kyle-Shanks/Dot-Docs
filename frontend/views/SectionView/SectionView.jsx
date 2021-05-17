@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Switch, useRouteMatch } from 'react-router-dom';
 import { Text } from 'frontend/components/typography';
@@ -8,22 +8,11 @@ import { FadeContainer } from 'frontend/views/views.styled';
 
 const BASE_CLASS_NAME = 'SectionView';
 
-const SectionView = ({ className, data, OverviewComponent, path, resetScroll }) => {
+const SectionView = ({ className, data, OverviewComponent, path }) => {
     const overviewMatch = useRouteMatch(path);
     const sectionMatch = useRouteMatch(`${path}/:section`);
-    const [section, setSection] = useState(null);
 
     const getData = (name) => data.find(datum => datum.name === name);
-
-    useEffect(() => {
-        if (overviewMatch && overviewMatch.isExact) {
-            setSection('overview');
-        } else if (sectionMatch && sectionMatch.isExact) {
-            setSection(sectionMatch.params.section);
-        }
-    }, [overviewMatch, sectionMatch]);
-
-    useEffect(resetScroll, [section]);
 
     return (
         <FadeContainer className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
@@ -46,7 +35,6 @@ SectionView.propTypes = {
     data: PropTypes.arrayOf(Object).isRequired,
     OverviewComponent: PropTypes.func.isRequired,
     path: PropTypes.string.isRequired,
-    resetScroll: PropTypes.func.isRequired,
 };
 
 SectionView.defaultProps = {

@@ -38,6 +38,7 @@ Alert.propTypes = {
 Alert.defaultProps = {
     className: '',
     children: null,
+    type: 'info',
 };
 
 export default Alert;

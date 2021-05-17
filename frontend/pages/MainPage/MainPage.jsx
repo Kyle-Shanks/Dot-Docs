@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
-import { withRouter, Switch, useRouteMatch } from 'react-router-dom';
+import { withRouter, Switch, useLocation, useRouteMatch } from 'react-router-dom';
 import { Flex } from 'frontend/components/layout';
 import Sidebar from 'frontend/compounds/Sidebar';
 import { componentsData, coreData, effectsData, instrumentsData, sourcesData } from 'frontend/docs';
@@ -34,6 +34,7 @@ const BASE_CLASS_NAME = 'MainPage';
 
 const MainPage = ({ className, theme, toggleTheme }) => {
     const contentContainer = useRef();
+    const location = useLocation();
     const splashMatch = useRouteMatch(SPLASH_PATH);
     const overviewMatch = useRouteMatch(OVERVIEW_PATH);
     const examplesMatch = useRouteMatch(EXAMPLES_PATH);
@@ -43,18 +44,16 @@ const MainPage = ({ className, theme, toggleTheme }) => {
     const instrumentsMatch = useRouteMatch(INSTRUMENTS_PATH);
     const effectsMatch = useRouteMatch(EFFECTS_PATH);
 
-    const resetScroll = () => {
-        contentContainer.current.scrollTop = 0;
-    };
+    useEffect(() => contentContainer.current.scrollTop = 0, [location]);
 
     return (
         <Flex className={`${BASE_CLASS_NAME} ${className}`.trim()}>
             <Sidebar theme={theme} toggleTheme={toggleTheme} />
             <MainContent ref={contentContainer}>
                 <Switch>
-                    {splashMatch && splashMatch.isExact && <Splash resetScroll={resetScroll} />}
-                    {overviewMatch && overviewMatch.isExact && <Overview resetScroll={resetScroll} />}
-                    {examplesMatch && examplesMatch.isExact && <Examples resetScroll={resetScroll} />}
+                    {splashMatch && splashMatch.isExact && <Splash />}
+                    {overviewMatch && overviewMatch.isExact && <Overview />}
+                    {examplesMatch && examplesMatch.isExact && <Examples />}
 
                     {componentsMatch && (
                         <SectionView
@@ -62,7 +61,6 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                             data={componentsData}
                             path={COMPONENTS_PATH}
                             OverviewComponent={ComponentsOverview}
-                            resetScroll={resetScroll}
                         />
                     )}
                     {coreMatch && (
@@ -71,7 +69,6 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                             data={coreData}
                             path={CORE_PATH}
                             OverviewComponent={CoreOverview}
-                            resetScroll={resetScroll}
                         />
                     )}
                     {sourcesMatch && (
@@ -80,7 +77,6 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                             data={sourcesData}
                             path={SOURCES_PATH}
                             OverviewComponent={SourcesOverview}
-                            resetScroll={resetScroll}
                         />
                     )}
                     {instrumentsMatch && (
@@ -89,7 +85,6 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                             data={instrumentsData}
                             path={INSTRUMENTS_PATH}
                             OverviewComponent={InstrumentsOverview}
-                            resetScroll={resetScroll}
                         />
                     )}
                     {effectsMatch && (
@@ -98,7 +93,6 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                             data={effectsData}
                             path={EFFECTS_PATH}
                             OverviewComponent={EffectsOverview}
-                            resetScroll={resetScroll}
                         />
                     )}
 
