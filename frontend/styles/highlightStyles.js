@@ -60,7 +60,8 @@ export default `
 
     .token.comment,
     .token.prolog {
-        color: #41505e;
+        // color: #41505e;
+        color: #51606e;
     }
 
     .token.punctuation,
@@ -228,6 +229,7 @@ export default `
 
     pre[class*="language-javascript"],
     code[class*="language-javascript"] {
-        color: #698296;
+        // color: #698296;
+        color: #7992a6;
     }
 `;

@@ -8,6 +8,18 @@ import { FadeContainer } from 'frontend/views/views.styled';
 
 const BASE_CLASS_NAME = 'Splash';
 
+const installExample = `# Installing with npm
+npm install dot-audio
+
+# Installing with yarn
+yarn add dot-audio`;
+
+const importExample = `// Import in your project
+import * as Dot from 'dot-audio'
+
+// Import specific nodes
+import { Synth, PingPongDelay, Keyboard } from 'dot-audio'`;
+
 const Splash = ({ className }) => (
     <FadeContainer>
         <Container className={`${BASE_CLASS_NAME} ${className}`.trim()} padding={SPACING.l}>
@@ -17,19 +29,20 @@ const Splash = ({ className }) => (
                     Dot is a simple web audio library for creating synthesizers and other real-time audio synthesis projects.
                 </Text>
                 <Text align="justify">
-                    Dot provides a suite of useful nodes and extras to help create amazing audio experiences.
+                    Dot provides a suite of nodes, util functions, and extras to help create amazing audio experiences.
                     Dot was design to be lightweight and easy to use, while still providing enough to cover most common use-cases.
                     Dot takes a lot of inspiration from Tone js.
                 </Text>
             </Container>
 
             <Header tag="h4" margin={`0 0 ${SPACING.m}`}>Installation</Header>
-            <Container vGap={SPACING.m} margin={`0 0 ${SPACING.xl}`}>
-                <Editor
-                    language="bash"
-                    content={'# Installing with npm\nnpm install dot-audio\n\n# Installing with yarn\nyarn add dot-audio'}
-                />
-                <Editor content={'// Import in your project\nimport * as Dot from \'dot-audio\''} />
+            <Container margin={`0 0 ${SPACING.xl}`}>
+                <Editor language="bash" content={installExample} />
+            </Container>
+
+            <Header tag="h4" margin={`0 0 ${SPACING.m}`}>Import</Header>
+            <Container margin={`0 0 ${SPACING.xl}`}>
+                <Editor content={importExample} />
             </Container>
         </Container>
     </FadeContainer>

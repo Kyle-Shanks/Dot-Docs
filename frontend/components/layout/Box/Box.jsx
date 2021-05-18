@@ -45,8 +45,8 @@ Box.defaultProps = {
     margin: '',
     padding: '',
     fontSize: '',
-    hGap: '0rem',
-    vGap: '0rem',
+    hGap: '',
+    vGap: '',
 };
 
 export default Box;

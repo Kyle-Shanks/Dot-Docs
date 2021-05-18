@@ -13,8 +13,8 @@ export const StyledComponent = styled.div`
     }
 
     && > * + * {
-        ${({ hGap }) => `margin-left: ${hGap}`};
-        ${({ vGap }) => `margin-top: ${vGap}`};
+        ${({ hGap }) => hGap && `margin-left: ${hGap}`};
+        ${({ vGap }) => vGap && `margin-top: ${vGap}`};
     }
 
     // For instant icon color updates

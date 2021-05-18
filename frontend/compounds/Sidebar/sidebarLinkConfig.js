@@ -1,6 +1,7 @@
 import {
     OVERVIEW_PATH,
     EXAMPLES_PATH,
+    DEMO_PATH,
     COMPONENTS_PATH,
     CORE_PATH,
     EFFECTS_PATH,
@@ -13,13 +14,17 @@ const sidebarLinkConfig = [
         label: 'Getting Started',
         path: '',
         links: [
-            {
-                label: 'Overview',
-                path: OVERVIEW_PATH,
-            },
+            // {
+            //     label: 'Overview',
+            //     path: OVERVIEW_PATH,
+            // },
             {
                 label: 'Examples',
                 path: EXAMPLES_PATH,
+            },
+            {
+                label: 'Demo',
+                path: DEMO_PATH,
             },
         ],
     },

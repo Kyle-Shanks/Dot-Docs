@@ -4,6 +4,7 @@ import { withRouter, Switch, useLocation, useRouteMatch } from 'react-router-dom
 import { Flex } from 'frontend/components/layout';
 import Sidebar from 'frontend/compounds/Sidebar';
 import { componentsData, coreData, effectsData, instrumentsData, sourcesData } from 'frontend/docs';
+import DemoView from 'frontend/views/DemoView';
 import Examples from 'frontend/views/Examples';
 import Splash from 'frontend/views/Splash';
 import SectionView from 'frontend/views/SectionView';
@@ -20,6 +21,7 @@ import {
     SPLASH_PATH,
     OVERVIEW_PATH,
     EXAMPLES_PATH,
+    DEMO_PATH,
     COMPONENTS_PATH,
     CORE_PATH,
     EFFECTS_PATH,
@@ -38,6 +40,7 @@ const MainPage = ({ className, theme, toggleTheme }) => {
     const splashMatch = useRouteMatch(SPLASH_PATH);
     const overviewMatch = useRouteMatch(OVERVIEW_PATH);
     const examplesMatch = useRouteMatch(EXAMPLES_PATH);
+    const demoMatch = useRouteMatch(DEMO_PATH);
     const componentsMatch = useRouteMatch(COMPONENTS_PATH);
     const coreMatch = useRouteMatch(CORE_PATH);
     const sourcesMatch = useRouteMatch(SOURCES_PATH);
@@ -54,6 +57,7 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                     {splashMatch && splashMatch.isExact && <Splash />}
                     {overviewMatch && overviewMatch.isExact && <Overview />}
                     {examplesMatch && examplesMatch.isExact && <Examples />}
+                    {demoMatch && demoMatch.isExact && <DemoView />}
 
                     {componentsMatch && (
                         <SectionView
