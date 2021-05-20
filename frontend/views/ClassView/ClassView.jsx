@@ -15,7 +15,18 @@ import {
 
 const BASE_CLASS_NAME = 'ClassView';
 
-// TODO: Create a method that can get type strings. Need to hande UnionType (An array of types)
+const getDescriptionText = (desc, key) => (
+    desc.children.map((paragraph, idx) => (
+        <Text key={`${key}-p${idx}`}>
+            {paragraph.children.map((text) => text.value).join('\n')}
+        </Text>
+    ))
+);
+
+// TODO: Need to hande UnionType (An array of types)
+const getTypeText = (type) => {
+    return type.name || (type.expression && type.expression.name) || '-'
+}
 
 const ClassView = ({ className, data }) => {
     if (!data) return <NotFoundView />;
@@ -24,14 +35,6 @@ const ClassView = ({ className, data }) => {
     const sortedMembers = [...members.instance].sort((a, b) => (a.name > b.name ? 1 : -1));
     const paramsTag = tags.find((tag) => tag.title === 'params');
     const extendsTag = tags.find((tag) => tag.title === 'extends');
-
-    const getDescriptionText = (desc, key) => (
-        desc.children.map((paragraph, idx) => (
-            <Text key={`${key}-p${idx}`}>
-                {paragraph.children.map((text) => text.value).join('\n')}
-            </Text>
-        ))
-    );
 
     return (
         <Container className={`${BASE_CLASS_NAME} ${className}`.trim()}>
@@ -94,7 +97,7 @@ const ClassView = ({ className, data }) => {
                                             {param.properties.map((prop) => (
                                                 <TableRow key={`${name}-param-${prop.name}`}>
                                                     <Td>{prop.name}</Td>
-                                                    <Td>{prop.type.name || (prop.type.expression && param.type.expression.name) || '-'}</Td>
+                                                    <Td>{getTypeText(prop.type)}</Td>
                                                     <Td>{getDescriptionText(prop.description,`${prop.name}-desc`)}</Td>
                                                 </TableRow>
                                             ))}
@@ -126,7 +129,7 @@ const ClassView = ({ className, data }) => {
                             <MethodContainer key={method.namespace} vGap={SPACING.m}>
                                 <Text fontSize={FONT_SIZE.l}>
                                     {method.name}({method.params.map((param) => param.name).join(', ')})
-                                    {method.returns.length > 0 && ` => ${method.returns[0].type.name}`}
+                                    {method.returns.length > 0 && ` => ${getTypeText(method.returns[0].type)}`}
                                 </Text>
                                 {getDescriptionText(method.description, `${method.namespace}-desc`)}
                                 {method.returns.length > 0 && (
@@ -150,7 +153,7 @@ const ClassView = ({ className, data }) => {
                                                 {method.params.map((param) => (
                                                     <TableRow key={`${name}-param-${param.name}`}>
                                                         <Td>{param.name}</Td>
-                                                        <Td>{param.type.name || (param.type.expression && param.type.expression.name) || '-'}</Td>
+                                                        <Td>{getTypeText(param.type)}</Td>
                                                         <Td>{param.description && getDescriptionText(param.description, `${param.name}-desc`)}</Td>
                                                     </TableRow>
                                                 ))}

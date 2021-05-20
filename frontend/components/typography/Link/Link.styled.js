@@ -6,6 +6,7 @@ export const StyledComponent = styled(Box)`
     ${relaInline}
     color: ${({ theme }) => theme.textLink};
     text-decoration: none;
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;

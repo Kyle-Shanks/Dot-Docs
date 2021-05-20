@@ -10,9 +10,11 @@ const ComponentsOverview = ({ className }) => {
     return (
         <Container className={`${BASE_CLASS_NAME} ${className}`.trim()}>
             <Header tag="h2" margin={`0 0 ${SPACING.l}`}>Components Overview</Header>
-            <Text margin={`0 0 ${SPACING.m}`} align="justify">
-                Components are a collection of utility nodes that allow for param and signal manipulation.
-            </Text>
+            <Container vGap={SPACING.m} margin={`0 0 ${SPACING.l}`}>
+                <Text align="justify">
+                    Components are a collection of utility nodes that allow for param and signal manipulation.
+                </Text>
+            </Container>
         </Container>
     );
 };

@@ -8,7 +8,7 @@
           "children": [
             {
               "type": "text",
-              "value": "A general-purpose envelope that can be connected to AudioParams to modulate values over time.\nBuilt using a ConstantSource node."
+              "value": "A general-purpose ADSR envelope that can be connected to AudioParams to modulate values over time.\nBuilt using a ConstantSource node."
             }
           ]
         }
@@ -354,7 +354,7 @@
           "tags": [
             {
               "title": "returns",
-              "description": null,
+              "description": "Attack time",
               "lineNumber": 2,
               "type": {
                 "type": "NameExpression",
@@ -394,7 +394,17 @@
             {
               "description": {
                 "type": "root",
-                "children": []
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Attack time"
+                      }
+                    ]
+                  }
+                ]
               },
               "title": "returns",
               "type": {
@@ -449,7 +459,7 @@
           "tags": [
             {
               "title": "returns",
-              "description": null,
+              "description": "Decay time",
               "lineNumber": 2,
               "type": {
                 "type": "NameExpression",
@@ -489,7 +499,17 @@
             {
               "description": {
                 "type": "root",
-                "children": []
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Decay time"
+                      }
+                    ]
+                  }
+                ]
               },
               "title": "returns",
               "type": {
@@ -544,7 +564,7 @@
           "tags": [
             {
               "title": "returns",
-              "description": null,
+              "description": "Sustain value",
               "lineNumber": 2,
               "type": {
                 "type": "NameExpression",
@@ -584,7 +604,17 @@
             {
               "description": {
                 "type": "root",
-                "children": []
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Sustain value"
+                      }
+                    ]
+                  }
+                ]
               },
               "title": "returns",
               "type": {
@@ -639,7 +669,7 @@
           "tags": [
             {
               "title": "returns",
-              "description": null,
+              "description": "Release time",
               "lineNumber": 2,
               "type": {
                 "type": "NameExpression",
@@ -679,7 +709,17 @@
             {
               "description": {
                 "type": "root",
-                "children": []
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Release time"
+                      }
+                    ]
+                  }
+                ]
               },
               "title": "returns",
               "type": {
@@ -734,7 +774,7 @@
           "tags": [
             {
               "title": "returns",
-              "description": null,
+              "description": "Modifier value",
               "lineNumber": 2,
               "type": {
                 "type": "NameExpression",
@@ -774,7 +814,17 @@
             {
               "description": {
                 "type": "root",
-                "children": []
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Modifier value"
+                      }
+                    ]
+                  }
+                ]
               },
               "title": "returns",
               "type": {

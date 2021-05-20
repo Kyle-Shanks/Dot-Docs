@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Box, Container, Flex } from 'frontend/components/layout';
+import { FONT_SIZE } from 'frontend/styles/constants';
 import { relaBlock, absFill } from 'frontend/styles/util';
 
 export const DemoContainer = styled(Container)`
@@ -19,6 +20,7 @@ export const Key = styled(Box)`
     transition: 0.1s ease;
     text-align: center;
     font-weight: 300;
+    font-size: ${FONT_SIZE.s};
 `;
 
 export const WhiteKeys = styled(Flex)`

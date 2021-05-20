@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Editor } from 'frontend/components/data';
 import { Container } from 'frontend/components/layout';
-import { Header, Text } from 'frontend/components/typography';
+import { Header, Link, Text } from 'frontend/components/typography';
 import { SPACING } from 'frontend/styles/constants';
 import { FadeContainer } from 'frontend/views/views.styled';
 
@@ -31,7 +31,12 @@ const Splash = ({ className }) => (
                 <Text align="justify">
                     Dot provides a suite of nodes, util functions, and extras to help create amazing audio experiences.
                     Dot was design to be lightweight and easy to use, while still providing enough to cover most common use-cases.
-                    Dot takes a lot of inspiration from Tone js.
+                </Text>
+                <Text align="justify">
+                    Dot takes a lot of inspiration from <Link href="https://github.com/Tonejs/Tone.js">Tone js</Link>. :p
+                </Text>
+                <Text align="justify">
+                    <Link href="https://github.com/Kyle-Shanks/Dot">View Dot on Github</Link>
                 </Text>
             </Container>
 

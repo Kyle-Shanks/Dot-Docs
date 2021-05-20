@@ -21,7 +21,7 @@ const BASE_CLASS_NAME = 'Sidebar';
 const Sidebar = ({ className, theme, toggleTheme }) => {
     const history = useHistory();
     const [linkFilter, setLinkFilter] = useState('');
-    const pathname = history.location.pathname;
+    const { pathname } = history.location;
 
     const goToPath = (path) => {
         if (pathname !== path) history.push(path);

@@ -5,9 +5,16 @@ import MainPage from 'frontend/pages/MainPage';
 import { GlobalStyles } from 'frontend/styles/globalStyles';
 import { THEMES, LIGHT, DARK } from 'frontend/styles/themes';
 
+const THEME_KEY = 'DotDocs-Theme';
+
 const Root = () => {
-    const [theme, setTheme] = useState(LIGHT);
-    const toggleTheme = () => (theme === LIGHT ? setTheme(DARK) : setTheme(LIGHT));
+    const [theme, setTheme] = useState(localStorage.getItem(THEME_KEY) || LIGHT);
+
+    const toggleTheme = () => {
+        const newTheme = theme === LIGHT ? DARK : LIGHT;
+        localStorage.setItem(THEME_KEY, newTheme);
+        setTheme(newTheme);
+    };
 
     return (
         <Router>
