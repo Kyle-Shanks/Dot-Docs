@@ -8,7 +8,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A source node that outputs signal based on a provided audio buffer.\nWrapper class for the native AudioBufferSourceNode.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A source node that outputs signal based on a provided audio buffer.\nWrapper class for the native AudioBufferSourceNode."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -33,19 +42,19 @@
       {
         "title": "example",
         "description": "const bufferSize = AC.sampleRate * 2\nconst buffer = AC.createBuffer(1, bufferSize, AC.sampleRate)\n\n// Fill the buffer with white noise\nconst data = buffer.getChannelData(0)\nfor (let i = 0; i < data.length; i++) data[i] = Math.random() * 2 - 1\n\nconst bufferNode = new Dot.BufferSource(AC, { buffer })",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 16,
+        "lineNumber": 17,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 17,
+        "lineNumber": 18,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -55,7 +64,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 18,
+        "lineNumber": 19,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -65,7 +74,7 @@
       {
         "title": "param",
         "description": "AudioBuffer to be played (default: null)",
-        "lineNumber": 19,
+        "lineNumber": 20,
         "type": {
           "type": "NameExpression",
           "name": "AudioBuffer"
@@ -75,7 +84,7 @@
       {
         "title": "param",
         "description": "Setting to determine if the audio will be looped when the audio buffer finishes (default: false)",
-        "lineNumber": 20,
+        "lineNumber": 21,
         "type": {
           "type": "NameExpression",
           "name": "Boolean"
@@ -85,7 +94,7 @@
       {
         "title": "param",
         "description": "Detune value of the audio in cents (default: 0)",
-        "lineNumber": 21,
+        "lineNumber": 22,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -95,7 +104,7 @@
       {
         "title": "param",
         "description": "The speed that the audio is played back at (default: 1.0)",
-        "lineNumber": 22,
+        "lineNumber": 23,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -105,7 +114,7 @@
       {
         "title": "param",
         "description": "Property to autostart the source node (default: false)",
-        "lineNumber": 23,
+        "lineNumber": 24,
         "type": {
           "type": "NameExpression",
           "name": "Boolean"
@@ -115,12 +124,12 @@
       {
         "title": "params",
         "description": "detune - Node detune value\nplaybackRate - Node playbackRate value",
-        "lineNumber": 24
+        "lineNumber": 25
       },
       {
         "title": "returns",
         "description": "BufferSource Node",
-        "lineNumber": 27,
+        "lineNumber": 28,
         "type": {
           "type": "NameExpression",
           "name": "BufferSource"
@@ -133,18 +142,18 @@
         "column": 0
       },
       "end": {
-        "line": 39,
+        "line": 40,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 40,
+          "line": 41,
           "column": 0
         },
         "end": {
-          "line": 127,
+          "line": 128,
           "column": 1
         }
       },
@@ -154,7 +163,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 16,
+        "lineNumber": 17,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -169,7 +178,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 17,
+        "lineNumber": 18,
         "description": {
           "type": "root",
           "children": [
@@ -192,7 +201,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 18,
+        "lineNumber": 19,
         "description": {
           "type": "root",
           "children": [
@@ -215,7 +224,7 @@
           {
             "title": "param",
             "name": "opts.buffer",
-            "lineNumber": 19,
+            "lineNumber": 20,
             "description": {
               "type": "root",
               "children": [
@@ -238,7 +247,7 @@
           {
             "title": "param",
             "name": "opts.loop",
-            "lineNumber": 20,
+            "lineNumber": 21,
             "description": {
               "type": "root",
               "children": [
@@ -261,7 +270,7 @@
           {
             "title": "param",
             "name": "opts.detune",
-            "lineNumber": 21,
+            "lineNumber": 22,
             "description": {
               "type": "root",
               "children": [
@@ -284,7 +293,7 @@
           {
             "title": "param",
             "name": "opts.playbackRate",
-            "lineNumber": 22,
+            "lineNumber": 23,
             "description": {
               "type": "root",
               "children": [
@@ -307,7 +316,7 @@
           {
             "title": "param",
             "name": "opts.start",
-            "lineNumber": 23,
+            "lineNumber": 24,
             "description": {
               "type": "root",
               "children": [
@@ -383,22 +392,22 @@
           "tags": [],
           "loc": {
             "start": {
-              "line": 64,
+              "line": 65,
               "column": 4
             },
             "end": {
-              "line": 66,
+              "line": 67,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 67,
+                "line": 68,
                 "column": 4
               },
               "end": {
-                "line": 67,
+                "line": 68,
                 "column": 43
               }
             },
@@ -456,22 +465,22 @@
           "tags": [],
           "loc": {
             "start": {
-              "line": 69,
+              "line": 70,
               "column": 4
             },
             "end": {
-              "line": 71,
+              "line": 72,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 72,
+                "line": 73,
                 "column": 4
               },
               "end": {
-                "line": 72,
+                "line": 73,
                 "column": 41
               }
             },
@@ -539,22 +548,22 @@
           ],
           "loc": {
             "start": {
-              "line": 75,
+              "line": 76,
               "column": 4
             },
             "end": {
-              "line": 78,
+              "line": 79,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 79,
+                "line": 80,
                 "column": 4
               },
               "end": {
-                "line": 79,
+                "line": 80,
                 "column": 46
               }
             },
@@ -644,22 +653,22 @@
           ],
           "loc": {
             "start": {
-              "line": 81,
+              "line": 82,
               "column": 4
             },
             "end": {
-              "line": 84,
+              "line": 85,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 85,
+                "line": 86,
                 "column": 4
               },
               "end": {
-                "line": 85,
+                "line": 86,
                 "column": 42
               }
             },
@@ -749,22 +758,22 @@
           ],
           "loc": {
             "start": {
-              "line": 87,
+              "line": 88,
               "column": 4
             },
             "end": {
-              "line": 90,
+              "line": 91,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 91,
+                "line": 92,
                 "column": 4
               },
               "end": {
-                "line": 91,
+                "line": 92,
                 "column": 46
               }
             },
@@ -854,22 +863,22 @@
           ],
           "loc": {
             "start": {
-              "line": 93,
+              "line": 94,
               "column": 4
             },
             "end": {
-              "line": 96,
+              "line": 97,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 97,
+                "line": 98,
                 "column": 4
               },
               "end": {
-                "line": 97,
+                "line": 98,
                 "column": 58
               }
             },
@@ -960,22 +969,22 @@
           ],
           "loc": {
             "start": {
-              "line": 100,
+              "line": 101,
               "column": 4
             },
             "end": {
-              "line": 103,
+              "line": 104,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 104,
+                "line": 105,
                 "column": 4
               },
               "end": {
-                "line": 104,
+                "line": 105,
                 "column": 55
               }
             },
@@ -1068,22 +1077,22 @@
           ],
           "loc": {
             "start": {
-              "line": 106,
+              "line": 107,
               "column": 4
             },
             "end": {
-              "line": 109,
+              "line": 110,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 110,
+                "line": 111,
                 "column": 4
               },
               "end": {
-                "line": 110,
+                "line": 111,
                 "column": 51
               }
             },
@@ -1189,22 +1198,22 @@
           ],
           "loc": {
             "start": {
-              "line": 112,
+              "line": 113,
               "column": 4
             },
             "end": {
-              "line": 117,
+              "line": 118,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 118,
+                "line": 119,
                 "column": 4
               },
               "end": {
-                "line": 118,
+                "line": 119,
                 "column": 78
               }
             },
@@ -1336,22 +1345,22 @@
           ],
           "loc": {
             "start": {
-              "line": 120,
+              "line": 121,
               "column": 4
             },
             "end": {
-              "line": 125,
+              "line": 126,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 126,
+                "line": 127,
                 "column": 4
               },
               "end": {
-                "line": 126,
+                "line": 127,
                 "column": 90
               }
             },
@@ -1462,7 +1471,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A source node that outputs a constant signal that can be adjusted.\nWrapper class for the native ConstantSource node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A source node that outputs a constant signal that can be adjusted.\nWrapper class for the native ConstantSource node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -1487,14 +1505,14 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -1504,7 +1522,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 8,
+        "lineNumber": 9,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -1514,7 +1532,7 @@
       {
         "title": "param",
         "description": "The value of the output from the source node (default: 1)",
-        "lineNumber": 9,
+        "lineNumber": 10,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -1524,7 +1542,7 @@
       {
         "title": "param",
         "description": "Property to autostart the source node (default: false)",
-        "lineNumber": 10,
+        "lineNumber": 11,
         "type": {
           "type": "NameExpression",
           "name": "Boolean"
@@ -1534,12 +1552,12 @@
       {
         "title": "params",
         "description": "offset - Node offset value",
-        "lineNumber": 11
+        "lineNumber": 12
       },
       {
         "title": "returns",
         "description": "ConstantSource Node",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "ConstantSource"
@@ -1552,18 +1570,18 @@
         "column": 0
       },
       "end": {
-        "line": 22,
+        "line": 23,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 23,
+          "line": 24,
           "column": 0
         },
         "end": {
-          "line": 68,
+          "line": 69,
           "column": 1
         }
       },
@@ -1573,7 +1591,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -1584,7 +1602,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "description": {
           "type": "root",
           "children": [
@@ -1607,7 +1625,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 8,
+        "lineNumber": 9,
         "description": {
           "type": "root",
           "children": [
@@ -1630,7 +1648,7 @@
           {
             "title": "param",
             "name": "opts.offset",
-            "lineNumber": 9,
+            "lineNumber": 10,
             "description": {
               "type": "root",
               "children": [
@@ -1653,7 +1671,7 @@
           {
             "title": "param",
             "name": "opts.start",
-            "lineNumber": 10,
+            "lineNumber": 11,
             "description": {
               "type": "root",
               "children": [
@@ -1729,22 +1747,22 @@
           "tags": [],
           "loc": {
             "start": {
-              "line": 43,
+              "line": 44,
               "column": 4
             },
             "end": {
-              "line": 45,
+              "line": 46,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 46,
+                "line": 47,
                 "column": 4
               },
               "end": {
-                "line": 46,
+                "line": 47,
                 "column": 37
               }
             },
@@ -1802,22 +1820,22 @@
           "tags": [],
           "loc": {
             "start": {
-              "line": 48,
+              "line": 49,
               "column": 4
             },
             "end": {
-              "line": 50,
+              "line": 51,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 51,
+                "line": 52,
                 "column": 4
               },
               "end": {
-                "line": 51,
+                "line": 52,
                 "column": 35
               }
             },
@@ -1885,22 +1903,22 @@
           ],
           "loc": {
             "start": {
-              "line": 54,
+              "line": 55,
               "column": 4
             },
             "end": {
-              "line": 57,
+              "line": 58,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 58,
+                "line": 59,
                 "column": 4
               },
               "end": {
-                "line": 58,
+                "line": 59,
                 "column": 40
               }
             },
@@ -2004,22 +2022,22 @@
           ],
           "loc": {
             "start": {
-              "line": 61,
+              "line": 62,
               "column": 4
             },
             "end": {
-              "line": 66,
+              "line": 67,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 67,
+                "line": 68,
                 "column": 4
               },
               "end": {
-                "line": 67,
+                "line": 68,
                 "column": 78
               }
             },
@@ -4226,7 +4244,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A source node that outputs signal of different waveforms and frequencies.\nWrapper class for the native Oscillator audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A source node that outputs signal of different waveforms and frequencies.\nWrapper class for the native Oscillator audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -4251,19 +4278,19 @@
       {
         "title": "example",
         "description": "const oscillator = new Dot.Oscillator(AC, { type: 'triangle' })",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 9,
+        "lineNumber": 10,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 10,
+        "lineNumber": 11,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -4273,7 +4300,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 11,
+        "lineNumber": 12,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -4283,7 +4310,7 @@
       {
         "title": "param",
         "description": "The waveform of the oscillator (default: 'sine')",
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -4293,7 +4320,7 @@
       {
         "title": "param",
         "description": "The frequency of the oscillator in Hz (default: 440)",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -4303,7 +4330,7 @@
       {
         "title": "param",
         "description": "The detune of the oscillator in cents. [100 cents/semitone, 1200 cents/octave] (default: 0)",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -4313,7 +4340,7 @@
       {
         "title": "param",
         "description": "Property to autostart the source node (default: false)",
-        "lineNumber": 15,
+        "lineNumber": 16,
         "type": {
           "type": "NameExpression",
           "name": "Boolean"
@@ -4323,12 +4350,12 @@
       {
         "title": "params",
         "description": "frequency - Frequency of the oscillator\ndetune - Detune value of the oscillator",
-        "lineNumber": 16
+        "lineNumber": 17
       },
       {
         "title": "returns",
         "description": "Oscillator Node",
-        "lineNumber": 19,
+        "lineNumber": 20,
         "type": {
           "type": "NameExpression",
           "name": "Oscillator"
@@ -4341,18 +4368,18 @@
         "column": 0
       },
       "end": {
-        "line": 31,
+        "line": 32,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 32,
+          "line": 33,
           "column": 0
         },
         "end": {
-          "line": 122,
+          "line": 123,
           "column": 1
         }
       },
@@ -4362,7 +4389,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 9,
+        "lineNumber": 10,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -4377,7 +4404,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 10,
+        "lineNumber": 11,
         "description": {
           "type": "root",
           "children": [
@@ -4400,7 +4427,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 11,
+        "lineNumber": 12,
         "description": {
           "type": "root",
           "children": [
@@ -4423,7 +4450,7 @@
           {
             "title": "param",
             "name": "opts.type",
-            "lineNumber": 12,
+            "lineNumber": 13,
             "description": {
               "type": "root",
               "children": [
@@ -4446,7 +4473,7 @@
           {
             "title": "param",
             "name": "opts.frequency",
-            "lineNumber": 13,
+            "lineNumber": 14,
             "description": {
               "type": "root",
               "children": [
@@ -4469,7 +4496,7 @@
           {
             "title": "param",
             "name": "opts.detune",
-            "lineNumber": 14,
+            "lineNumber": 15,
             "description": {
               "type": "root",
               "children": [
@@ -4492,7 +4519,7 @@
           {
             "title": "param",
             "name": "opts.start",
-            "lineNumber": 15,
+            "lineNumber": 16,
             "description": {
               "type": "root",
               "children": [
@@ -4568,22 +4595,22 @@
           "tags": [],
           "loc": {
             "start": {
-              "line": 55,
+              "line": 56,
               "column": 4
             },
             "end": {
-              "line": 57,
+              "line": 58,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 58,
+                "line": 59,
                 "column": 4
               },
               "end": {
-                "line": 58,
+                "line": 59,
                 "column": 34
               }
             },
@@ -4641,22 +4668,22 @@
           "tags": [],
           "loc": {
             "start": {
-              "line": 60,
+              "line": 61,
               "column": 4
             },
             "end": {
-              "line": 62,
+              "line": 63,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 63,
+                "line": 64,
                 "column": 4
               },
               "end": {
-                "line": 63,
+                "line": 64,
                 "column": 32
               }
             },
@@ -4724,22 +4751,22 @@
           ],
           "loc": {
             "start": {
-              "line": 66,
+              "line": 67,
               "column": 4
             },
             "end": {
-              "line": 69,
+              "line": 70,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 70,
+                "line": 71,
                 "column": 4
               },
               "end": {
-                "line": 70,
+                "line": 71,
                 "column": 52
               }
             },
@@ -4829,22 +4856,22 @@
           ],
           "loc": {
             "start": {
-              "line": 72,
+              "line": 73,
               "column": 4
             },
             "end": {
-              "line": 75,
+              "line": 76,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 76,
+                "line": 77,
                 "column": 4
               },
               "end": {
-                "line": 76,
+                "line": 77,
                 "column": 46
               }
             },
@@ -4934,22 +4961,22 @@
           ],
           "loc": {
             "start": {
-              "line": 78,
+              "line": 79,
               "column": 4
             },
             "end": {
-              "line": 81,
+              "line": 82,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 82,
+                "line": 83,
                 "column": 4
               },
               "end": {
-                "line": 82,
+                "line": 83,
                 "column": 38
               }
             },
@@ -5039,22 +5066,22 @@
           ],
           "loc": {
             "start": {
-              "line": 84,
+              "line": 85,
               "column": 4
             },
             "end": {
-              "line": 87,
+              "line": 88,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 88,
+                "line": 89,
                 "column": 4
               },
               "end": {
-                "line": 88,
+                "line": 89,
                 "column": 33
               }
             },
@@ -5158,22 +5185,22 @@
           ],
           "loc": {
             "start": {
-              "line": 91,
+              "line": 92,
               "column": 4
             },
             "end": {
-              "line": 97,
+              "line": 98,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 98,
+                "line": 99,
                 "column": 4
               },
               "end": {
-                "line": 98,
+                "line": 99,
                 "column": 84
               }
             },
@@ -5305,22 +5332,22 @@
           ],
           "loc": {
             "start": {
-              "line": 100,
+              "line": 101,
               "column": 4
             },
             "end": {
-              "line": 106,
+              "line": 107,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 107,
+                "line": 108,
                 "column": 4
               },
               "end": {
-                "line": 107,
+                "line": 108,
                 "column": 78
               }
             },
@@ -5439,22 +5466,22 @@
           ],
           "loc": {
             "start": {
-              "line": 109,
+              "line": 110,
               "column": 4
             },
             "end": {
-              "line": 112,
+              "line": 113,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 113,
+                "line": 114,
                 "column": 4
               },
               "end": {
-                "line": 113,
+                "line": 114,
                 "column": 44
               }
             },
@@ -5547,22 +5574,22 @@
           ],
           "loc": {
             "start": {
-              "line": 115,
+              "line": 116,
               "column": 4
             },
             "end": {
-              "line": 118,
+              "line": 119,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 119,
+                "line": 120,
                 "column": 4
               },
               "end": {
-                "line": 121,
+                "line": 122,
                 "column": 5
               }
             },

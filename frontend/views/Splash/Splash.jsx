@@ -30,7 +30,7 @@ const Splash = ({ className }) => (
                 </Text>
                 <Text align="justify">
                     Dot provides a suite of nodes, util functions, and extras to help create amazing audio experiences.
-                    Dot was design to be lightweight and easy to use, while still providing enough to cover most common use-cases.
+                    Dot was designed to be lightweight and easy to use, while still providing enough to cover most common use-cases.
                 </Text>
                 <Text align="justify">
                     Dot takes a lot of inspiration from <Link href="https://github.com/Tonejs/Tone.js">Tone js</Link>. :p

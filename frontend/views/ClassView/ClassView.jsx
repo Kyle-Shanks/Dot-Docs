@@ -18,7 +18,7 @@ const BASE_CLASS_NAME = 'ClassView';
 const getDescriptionText = (desc, key) => (
     desc.children.map((paragraph, idx) => (
         <Text key={`${key}-p${idx}`}>
-            {paragraph.children.map((text) => text.value).join('\n')}
+            {paragraph.children.map((text) => text.value || text.url || '').join('')}
         </Text>
     ))
 );

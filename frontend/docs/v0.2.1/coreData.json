@@ -8,7 +8,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A node used to combine two audio signals into one.\nWrapper class for the native ChannelMerger audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A node used to combine two audio signals into one.\nWrapper class for the native ChannelMerger audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -33,19 +42,19 @@
       {
         "title": "example",
         "description": "const osc = new Dot.Osc(AC)\nconst merger = new Dot.ChannelMerger(AC)\nconst leftGain = new Dot.Gain(AC, { gain: 0 })\nconst rightGain = new Dot.Gain(AC, { gain: 0 })\nconst leftLFO = new Dot.LFO(AC, { rate: 0.75, start: true })\nconst rightLFO = new Dot.LFO(AC, { rate: 0.5, start: true })\n\n// Connect\nosc.connect([leftGain, rightGain])\n\n// Left signal\nleftLFO.connect(leftGain.getParams().gain)\nleftGain.connect(merger, 0, 0)\n\n// Right signal\nrightLFO.connect(rightGain.getParams().gain)\nrightGain.connect(merger, 0, 1)\n\n// Output\nmerger.connect(AC.destination)",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 28,
+        "lineNumber": 29,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 29,
+        "lineNumber": 30,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -55,7 +64,7 @@
       {
         "title": "returns",
         "description": "ChannelMerger Node",
-        "lineNumber": 30,
+        "lineNumber": 31,
         "type": {
           "type": "NameExpression",
           "name": "ChannelMerger"
@@ -68,18 +77,18 @@
         "column": 0
       },
       "end": {
-        "line": 34,
+        "line": 35,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 35,
+          "line": 36,
           "column": 0
         },
         "end": {
-          "line": 45,
+          "line": 46,
           "column": 1
         }
       },
@@ -89,7 +98,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 28,
+        "lineNumber": 29,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -104,7 +113,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 29,
+        "lineNumber": 30,
         "description": {
           "type": "root",
           "children": [
@@ -179,7 +188,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A node used to split a stereo audio signal into its left and right components.\nWrapper class for the native ChannelSplitter audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A node used to split a stereo audio signal into its left and right components.\nWrapper class for the native ChannelSplitter audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -204,19 +222,19 @@
       {
         "title": "example",
         "description": "// Reverse the stereo image of a buffer\nconst buffer = new Dot.BufferSource(AC, { buffer: stereoBuffer })\nconst splitter = new Dot.ChannelSplitter(AC)\nconst merger = new Dot.ChannelMerger(AC)\n\n// Connect\nbuffer.connect(splitter)\n\n// Reverse signal\nsplitter.connect(merger, 0, 1) // Connect L to R\nsplitter.connect(merger, 1, 0) // Connect R to L\n\n// Output\nmerger.connect(AC.destination)",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 22,
+        "lineNumber": 23,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 23,
+        "lineNumber": 24,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -226,7 +244,7 @@
       {
         "title": "returns",
         "description": "ChannelSplitter Node",
-        "lineNumber": 24,
+        "lineNumber": 25,
         "type": {
           "type": "NameExpression",
           "name": "ChannelSplitter"
@@ -239,18 +257,18 @@
         "column": 0
       },
       "end": {
-        "line": 28,
+        "line": 29,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 29,
+          "line": 30,
           "column": 0
         },
         "end": {
-          "line": 39,
+          "line": 40,
           "column": 1
         }
       },
@@ -260,7 +278,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 22,
+        "lineNumber": 23,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -275,7 +293,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 23,
+        "lineNumber": 24,
         "description": {
           "type": "root",
           "children": [
@@ -350,7 +368,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A Node used to control the dynamic range of a signal.\nWrapper class for the native DynamicsCompressor audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A Node used to control the dynamic range of a signal.\nWrapper class for the native DynamicsCompressor audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -375,19 +402,19 @@
       {
         "title": "example",
         "description": "const synth = new Dot.PolySynth(AC)\nconst chorus = new Dot.Chorus(AC, { amount: 0.4 })\nconst compressor = new Dot.Compressor(AC, { threshold: -32, ratio: 8 })\n\nDot.chain(synth, chorus, compressor, AC.destination)",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -397,7 +424,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 15,
+        "lineNumber": 16,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -407,7 +434,7 @@
       {
         "title": "param",
         "description": "Volume threshold where compression will start in dB (default: -24)",
-        "lineNumber": 16,
+        "lineNumber": 17,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -417,7 +444,7 @@
       {
         "title": "param",
         "description": "Amount of compression on the signal above the threshold (default: 12)",
-        "lineNumber": 17,
+        "lineNumber": 18,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -427,7 +454,7 @@
       {
         "title": "param",
         "description": "Sharpness from the uncompressed to compressed signal (default: 30)",
-        "lineNumber": 18,
+        "lineNumber": 19,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -437,7 +464,7 @@
       {
         "title": "param",
         "description": "Amount of time for the compression to take effect (default: 0.003)",
-        "lineNumber": 19,
+        "lineNumber": 20,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -447,7 +474,7 @@
       {
         "title": "param",
         "description": "Amount of time for the compression to return the signal back to normal (default: 0.25)",
-        "lineNumber": 20,
+        "lineNumber": 21,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -457,12 +484,12 @@
       {
         "title": "params",
         "description": "threshold - Compressor threshold\nratio - Compressor ratio\nknee - Compressor knee value\nattack - Compressor attack time\nrelease - Compressor release time",
-        "lineNumber": 21
+        "lineNumber": 22
       },
       {
         "title": "returns",
         "description": "Compressor Node",
-        "lineNumber": 27,
+        "lineNumber": 28,
         "type": {
           "type": "NameExpression",
           "name": "Compressor"
@@ -475,18 +502,18 @@
         "column": 0
       },
       "end": {
-        "line": 39,
+        "line": 40,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 40,
+          "line": 41,
           "column": 0
         },
         "end": {
-          "line": 143,
+          "line": 144,
           "column": 1
         }
       },
@@ -496,7 +523,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -511,7 +538,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "description": {
           "type": "root",
           "children": [
@@ -534,7 +561,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 15,
+        "lineNumber": 16,
         "description": {
           "type": "root",
           "children": [
@@ -557,7 +584,7 @@
           {
             "title": "param",
             "name": "opts.threshold",
-            "lineNumber": 16,
+            "lineNumber": 17,
             "description": {
               "type": "root",
               "children": [
@@ -580,7 +607,7 @@
           {
             "title": "param",
             "name": "opts.ratio",
-            "lineNumber": 17,
+            "lineNumber": 18,
             "description": {
               "type": "root",
               "children": [
@@ -603,7 +630,7 @@
           {
             "title": "param",
             "name": "opts.knee",
-            "lineNumber": 18,
+            "lineNumber": 19,
             "description": {
               "type": "root",
               "children": [
@@ -626,7 +653,7 @@
           {
             "title": "param",
             "name": "opts.attack",
-            "lineNumber": 19,
+            "lineNumber": 20,
             "description": {
               "type": "root",
               "children": [
@@ -649,7 +676,7 @@
           {
             "title": "param",
             "name": "opts.release",
-            "lineNumber": 20,
+            "lineNumber": 21,
             "description": {
               "type": "root",
               "children": [
@@ -735,22 +762,22 @@
           ],
           "loc": {
             "start": {
-              "line": 67,
+              "line": 68,
               "column": 4
             },
             "end": {
-              "line": 70,
+              "line": 71,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 71,
+                "line": 72,
                 "column": 4
               },
               "end": {
-                "line": 71,
+                "line": 72,
                 "column": 52
               }
             },
@@ -830,22 +857,22 @@
           ],
           "loc": {
             "start": {
-              "line": 73,
+              "line": 74,
               "column": 4
             },
             "end": {
-              "line": 76,
+              "line": 77,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 77,
+                "line": 78,
                 "column": 4
               },
               "end": {
-                "line": 77,
+                "line": 78,
                 "column": 44
               }
             },
@@ -925,22 +952,22 @@
           ],
           "loc": {
             "start": {
-              "line": 79,
+              "line": 80,
               "column": 4
             },
             "end": {
-              "line": 82,
+              "line": 83,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 83,
+                "line": 84,
                 "column": 4
               },
               "end": {
-                "line": 83,
+                "line": 84,
                 "column": 42
               }
             },
@@ -1020,22 +1047,22 @@
           ],
           "loc": {
             "start": {
-              "line": 85,
+              "line": 86,
               "column": 4
             },
             "end": {
-              "line": 88,
+              "line": 89,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 89,
+                "line": 90,
                 "column": 4
               },
               "end": {
-                "line": 89,
+                "line": 90,
                 "column": 46
               }
             },
@@ -1115,22 +1142,22 @@
           ],
           "loc": {
             "start": {
-              "line": 91,
+              "line": 92,
               "column": 4
             },
             "end": {
-              "line": 94,
+              "line": 95,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 95,
+                "line": 96,
                 "column": 4
               },
               "end": {
-                "line": 95,
+                "line": 96,
                 "column": 48
               }
             },
@@ -1210,22 +1237,22 @@
           ],
           "loc": {
             "start": {
-              "line": 97,
+              "line": 98,
               "column": 4
             },
             "end": {
-              "line": 100,
+              "line": 101,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 101,
+                "line": 102,
                 "column": 4
               },
               "end": {
-                "line": 101,
+                "line": 102,
                 "column": 50
               }
             },
@@ -1319,22 +1346,22 @@
           ],
           "loc": {
             "start": {
-              "line": 104,
+              "line": 105,
               "column": 4
             },
             "end": {
-              "line": 109,
+              "line": 110,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 110,
+                "line": 111,
                 "column": 4
               },
               "end": {
-                "line": 110,
+                "line": 111,
                 "column": 84
               }
             },
@@ -1466,22 +1493,22 @@
           ],
           "loc": {
             "start": {
-              "line": 112,
+              "line": 113,
               "column": 4
             },
             "end": {
-              "line": 117,
+              "line": 118,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 118,
+                "line": 119,
                 "column": 4
               },
               "end": {
-                "line": 118,
+                "line": 119,
                 "column": 76
               }
             },
@@ -1613,22 +1640,22 @@
           ],
           "loc": {
             "start": {
-              "line": 120,
+              "line": 121,
               "column": 4
             },
             "end": {
-              "line": 125,
+              "line": 126,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 126,
+                "line": 127,
                 "column": 4
               },
               "end": {
-                "line": 126,
+                "line": 127,
                 "column": 74
               }
             },
@@ -1760,22 +1787,22 @@
           ],
           "loc": {
             "start": {
-              "line": 128,
+              "line": 129,
               "column": 4
             },
             "end": {
-              "line": 133,
+              "line": 134,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 134,
+                "line": 135,
                 "column": 4
               },
               "end": {
-                "line": 134,
+                "line": 135,
                 "column": 78
               }
             },
@@ -1907,22 +1934,22 @@
           ],
           "loc": {
             "start": {
-              "line": 136,
+              "line": 137,
               "column": 4
             },
             "end": {
-              "line": 141,
+              "line": 142,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 142,
+                "line": 143,
                 "column": 4
               },
               "end": {
-                "line": 142,
+                "line": 143,
                 "column": 80
               }
             },
@@ -2033,7 +2060,16 @@
           "children": [
             {
               "type": "text",
-              "value": "Wrapper class for the native Convolver audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "Wrapper class for the native Convolver audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -2058,19 +2094,19 @@
       {
         "title": "example",
         "description": "const convolver = new Dot.Convolver(AC, { buffer: impulseResponseBuffer })",
-        "lineNumber": 5
+        "lineNumber": 6
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 8,
+        "lineNumber": 9,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 9,
+        "lineNumber": 10,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -2080,7 +2116,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 10,
+        "lineNumber": 11,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -2090,7 +2126,7 @@
       {
         "title": "param",
         "description": "Audio buffer containing the impulse response (default: null)",
-        "lineNumber": 11,
+        "lineNumber": 12,
         "type": {
           "type": "NameExpression",
           "name": "AudioBuffer"
@@ -2100,7 +2136,7 @@
       {
         "title": "param",
         "description": "Setting to determine whether to scale the buffer by an equal-power normalization when it is set (default: false)",
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": {
           "type": "NameExpression",
           "name": "Boolean"
@@ -2110,7 +2146,7 @@
       {
         "title": "returns",
         "description": "Convolver Node",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "Convolver"
@@ -2123,18 +2159,18 @@
         "column": 0
       },
       "end": {
-        "line": 22,
+        "line": 23,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 23,
+          "line": 24,
           "column": 0
         },
         "end": {
-          "line": 64,
+          "line": 65,
           "column": 1
         }
       },
@@ -2144,7 +2180,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 8,
+        "lineNumber": 9,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -2159,7 +2195,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 9,
+        "lineNumber": 10,
         "description": {
           "type": "root",
           "children": [
@@ -2182,7 +2218,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 10,
+        "lineNumber": 11,
         "description": {
           "type": "root",
           "children": [
@@ -2205,7 +2241,7 @@
           {
             "title": "param",
             "name": "opts.buffer",
-            "lineNumber": 11,
+            "lineNumber": 12,
             "description": {
               "type": "root",
               "children": [
@@ -2228,7 +2264,7 @@
           {
             "title": "param",
             "name": "opts.normalize",
-            "lineNumber": 12,
+            "lineNumber": 13,
             "description": {
               "type": "root",
               "children": [
@@ -2314,22 +2350,22 @@
           ],
           "loc": {
             "start": {
-              "line": 41,
+              "line": 42,
               "column": 4
             },
             "end": {
-              "line": 44,
+              "line": 45,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 45,
+                "line": 46,
                 "column": 4
               },
               "end": {
-                "line": 45,
+                "line": 46,
                 "column": 43
               }
             },
@@ -2409,22 +2445,22 @@
           ],
           "loc": {
             "start": {
-              "line": 47,
+              "line": 48,
               "column": 4
             },
             "end": {
-              "line": 50,
+              "line": 51,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 51,
+                "line": 52,
                 "column": 4
               },
               "end": {
-                "line": 51,
+                "line": 52,
                 "column": 49
               }
             },
@@ -2505,22 +2541,22 @@
           ],
           "loc": {
             "start": {
-              "line": 54,
+              "line": 55,
               "column": 4
             },
             "end": {
-              "line": 57,
+              "line": 58,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 58,
+                "line": 59,
                 "column": 4
               },
               "end": {
-                "line": 58,
+                "line": 59,
                 "column": 52
               }
             },
@@ -2613,22 +2649,22 @@
           ],
           "loc": {
             "start": {
-              "line": 59,
+              "line": 60,
               "column": 4
             },
             "end": {
-              "line": 62,
+              "line": 63,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 63,
+                "line": 64,
                 "column": 4
               },
               "end": {
-                "line": 63,
+                "line": 64,
                 "column": 58
               }
             },
@@ -2713,7 +2749,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A Node used to delay an incoming signal by a specified amount of time.\nWrapper class for the native Delay audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A Node used to delay an incoming signal by a specified amount of time.\nWrapper class for the native Delay audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -2738,19 +2783,19 @@
       {
         "title": "example",
         "description": "const synth = new Dot.Synth(AC)\nconst delay = new Dot.Delay(AC, { delayTime: 1 })\n\nDot.chain(synth, delay, AC.destination)",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -2760,7 +2805,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -2770,7 +2815,7 @@
       {
         "title": "param",
         "description": "Amount of time that the incoming signal is delayed (default: 0)",
-        "lineNumber": 15,
+        "lineNumber": 16,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -2780,12 +2825,12 @@
       {
         "title": "params",
         "description": "delayTime - Node delay time",
-        "lineNumber": 16
+        "lineNumber": 17
       },
       {
         "title": "returns",
         "description": "Delay Node",
-        "lineNumber": 18,
+        "lineNumber": 19,
         "type": {
           "type": "NameExpression",
           "name": "Delay"
@@ -2798,18 +2843,18 @@
         "column": 0
       },
       "end": {
-        "line": 26,
+        "line": 27,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 27,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 60,
+          "line": 61,
           "column": 1
         }
       },
@@ -2819,7 +2864,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -2834,7 +2879,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "description": {
           "type": "root",
           "children": [
@@ -2857,7 +2902,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "description": {
           "type": "root",
           "children": [
@@ -2880,7 +2925,7 @@
           {
             "title": "param",
             "name": "opts.delayTime",
-            "lineNumber": 15,
+            "lineNumber": 16,
             "description": {
               "type": "root",
               "children": [
@@ -2966,22 +3011,22 @@
           ],
           "loc": {
             "start": {
-              "line": 46,
+              "line": 47,
               "column": 4
             },
             "end": {
-              "line": 49,
+              "line": 50,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 50,
+                "line": 51,
                 "column": 4
               },
               "end": {
-                "line": 50,
+                "line": 51,
                 "column": 52
               }
             },
@@ -3085,22 +3130,22 @@
           ],
           "loc": {
             "start": {
-              "line": 53,
+              "line": 54,
               "column": 4
             },
             "end": {
-              "line": 58,
+              "line": 59,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 59,
+                "line": 60,
                 "column": 4
               },
               "end": {
-                "line": 59,
+                "line": 60,
                 "column": 84
               }
             },
@@ -4478,7 +4523,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A Node used to filter frequencies of the incoming signal.\nWrapper class for the native BiquadFilter audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A Node used to filter frequencies of the incoming signal.\nWrapper class for the native BiquadFilter audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -4503,19 +4557,19 @@
       {
         "title": "example",
         "description": "const synth = new Dot.Synth(AC)\nconst filter = new Dot.Filter(AC, { frequency: 3000, q: 1 })\n\nDot.chain(synth, filter, AC.destination)",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -4525,7 +4579,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -4535,7 +4589,7 @@
       {
         "title": "param",
         "description": "Cutoff frequency of the filter in Hz (default: 11000)",
-        "lineNumber": 15,
+        "lineNumber": 16,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -4545,7 +4599,7 @@
       {
         "title": "param",
         "description": "The Q factor, or quality factor of the filter (default: 0)",
-        "lineNumber": 16,
+        "lineNumber": 17,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -4555,7 +4609,7 @@
       {
         "title": "param",
         "description": "The detune of the filter frequency in cents. [100 cents/semitone, 1200 cents/octave] (default: 0)",
-        "lineNumber": 17,
+        "lineNumber": 18,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -4565,7 +4619,7 @@
       {
         "title": "param",
         "description": "The gain of the filter in dB. Gain is only used if the filter type is set to lowshelf, highshelf, or peaking (default: 0)",
-        "lineNumber": 18,
+        "lineNumber": 19,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -4575,7 +4629,7 @@
       {
         "title": "param",
         "description": "The type of the filter (default: 'lowpass')",
-        "lineNumber": 19,
+        "lineNumber": 20,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -4585,12 +4639,12 @@
       {
         "title": "params",
         "description": "frequency - Node frequency\nq - Node q factor\ndetune - Node detune\ngain - Node gain\ntype - Node type",
-        "lineNumber": 20
+        "lineNumber": 21
       },
       {
         "title": "returns",
         "description": "Filter Node",
-        "lineNumber": 26,
+        "lineNumber": 27,
         "type": {
           "type": "NameExpression",
           "name": "Filter"
@@ -4603,18 +4657,18 @@
         "column": 0
       },
       "end": {
-        "line": 39,
+        "line": 40,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 40,
+          "line": 41,
           "column": 0
         },
         "end": {
-          "line": 136,
+          "line": 137,
           "column": 1
         }
       },
@@ -4624,7 +4678,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -4639,7 +4693,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "description": {
           "type": "root",
           "children": [
@@ -4662,7 +4716,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "description": {
           "type": "root",
           "children": [
@@ -4685,7 +4739,7 @@
           {
             "title": "param",
             "name": "opts.frequency",
-            "lineNumber": 15,
+            "lineNumber": 16,
             "description": {
               "type": "root",
               "children": [
@@ -4708,7 +4762,7 @@
           {
             "title": "param",
             "name": "opts.q",
-            "lineNumber": 16,
+            "lineNumber": 17,
             "description": {
               "type": "root",
               "children": [
@@ -4731,7 +4785,7 @@
           {
             "title": "param",
             "name": "opts.detune",
-            "lineNumber": 17,
+            "lineNumber": 18,
             "description": {
               "type": "root",
               "children": [
@@ -4754,7 +4808,7 @@
           {
             "title": "param",
             "name": "opts.gain",
-            "lineNumber": 18,
+            "lineNumber": 19,
             "description": {
               "type": "root",
               "children": [
@@ -4777,7 +4831,7 @@
           {
             "title": "param",
             "name": "opts.type",
-            "lineNumber": 19,
+            "lineNumber": 20,
             "description": {
               "type": "root",
               "children": [
@@ -4863,22 +4917,22 @@
           ],
           "loc": {
             "start": {
-              "line": 66,
+              "line": 67,
               "column": 4
             },
             "end": {
-              "line": 69,
+              "line": 70,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 70,
+                "line": 71,
                 "column": 4
               },
               "end": {
-                "line": 70,
+                "line": 71,
                 "column": 52
               }
             },
@@ -4968,22 +5022,22 @@
           ],
           "loc": {
             "start": {
-              "line": 72,
+              "line": 73,
               "column": 4
             },
             "end": {
-              "line": 75,
+              "line": 76,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 76,
+                "line": 77,
                 "column": 4
               },
               "end": {
-                "line": 76,
+                "line": 77,
                 "column": 36
               }
             },
@@ -5073,22 +5127,22 @@
           ],
           "loc": {
             "start": {
-              "line": 78,
+              "line": 79,
               "column": 4
             },
             "end": {
-              "line": 81,
+              "line": 82,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 82,
+                "line": 83,
                 "column": 4
               },
               "end": {
-                "line": 82,
+                "line": 83,
                 "column": 42
               }
             },
@@ -5178,22 +5232,22 @@
           ],
           "loc": {
             "start": {
-              "line": 84,
+              "line": 85,
               "column": 4
             },
             "end": {
-              "line": 87,
+              "line": 88,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 88,
+                "line": 89,
                 "column": 4
               },
               "end": {
-                "line": 88,
+                "line": 89,
                 "column": 46
               }
             },
@@ -5283,22 +5337,22 @@
           ],
           "loc": {
             "start": {
-              "line": 90,
+              "line": 91,
               "column": 4
             },
             "end": {
-              "line": 93,
+              "line": 94,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 94,
+                "line": 95,
                 "column": 4
               },
               "end": {
-                "line": 94,
+                "line": 95,
                 "column": 36
               }
             },
@@ -5402,22 +5456,22 @@
           ],
           "loc": {
             "start": {
-              "line": 97,
+              "line": 98,
               "column": 4
             },
             "end": {
-              "line": 102,
+              "line": 103,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 103,
+                "line": 104,
                 "column": 4
               },
               "end": {
-                "line": 103,
+                "line": 104,
                 "column": 84
               }
             },
@@ -5549,22 +5603,22 @@
           ],
           "loc": {
             "start": {
-              "line": 105,
+              "line": 106,
               "column": 4
             },
             "end": {
-              "line": 110,
+              "line": 111,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 111,
+                "line": 112,
                 "column": 4
               },
               "end": {
-                "line": 111,
+                "line": 112,
                 "column": 76
               }
             },
@@ -5696,22 +5750,22 @@
           ],
           "loc": {
             "start": {
-              "line": 113,
+              "line": 114,
               "column": 4
             },
             "end": {
-              "line": 118,
+              "line": 119,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 119,
+                "line": 120,
                 "column": 4
               },
               "end": {
-                "line": 119,
+                "line": 120,
                 "column": 74
               }
             },
@@ -5843,22 +5897,22 @@
           ],
           "loc": {
             "start": {
-              "line": 121,
+              "line": 122,
               "column": 4
             },
             "end": {
-              "line": 126,
+              "line": 127,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 127,
+                "line": 128,
                 "column": 4
               },
               "end": {
-                "line": 127,
+                "line": 128,
                 "column": 78
               }
             },
@@ -5977,22 +6031,22 @@
           ],
           "loc": {
             "start": {
-              "line": 129,
+              "line": 130,
               "column": 4
             },
             "end": {
-              "line": 132,
+              "line": 133,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 133,
+                "line": 134,
                 "column": 4
               },
               "end": {
-                "line": 135,
+                "line": 136,
                 "column": 5
               }
             },
@@ -6077,7 +6131,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A Node used to adjust the gain, or volume, of the incoming signal.\nWrapper class for the native Gain audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A Node used to adjust the gain, or volume, of the incoming signal.\nWrapper class for the native Gain audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -6102,19 +6165,19 @@
       {
         "title": "example",
         "description": "const oscillator = new Dot.Oscillator(AC, { start: true })\nconst gain = new Dot.Gain(AC, { gain: 0.25 })\n\nDot.chain(oscillator, gain, AC.destination)",
-        "lineNumber": 6
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -6124,7 +6187,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -6134,7 +6197,7 @@
       {
         "title": "param",
         "description": "Gain adjustment of the incoming signal (default: 1)",
-        "lineNumber": 15,
+        "lineNumber": 16,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -6144,12 +6207,12 @@
       {
         "title": "params",
         "description": "gain - Node gain",
-        "lineNumber": 16
+        "lineNumber": 17
       },
       {
         "title": "returns",
         "description": "Gain Node",
-        "lineNumber": 18,
+        "lineNumber": 19,
         "type": {
           "type": "NameExpression",
           "name": "Gain"
@@ -6162,18 +6225,18 @@
         "column": 0
       },
       "end": {
-        "line": 26,
+        "line": 27,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 27,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 60,
+          "line": 61,
           "column": 1
         }
       },
@@ -6183,7 +6246,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 12,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -6198,7 +6261,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 13,
+        "lineNumber": 14,
         "description": {
           "type": "root",
           "children": [
@@ -6221,7 +6284,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 14,
+        "lineNumber": 15,
         "description": {
           "type": "root",
           "children": [
@@ -6244,7 +6307,7 @@
           {
             "title": "param",
             "name": "opts.gain",
-            "lineNumber": 15,
+            "lineNumber": 16,
             "description": {
               "type": "root",
               "children": [
@@ -6330,22 +6393,22 @@
           ],
           "loc": {
             "start": {
-              "line": 46,
+              "line": 47,
               "column": 4
             },
             "end": {
-              "line": 49,
+              "line": 50,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 50,
+                "line": 51,
                 "column": 4
               },
               "end": {
-                "line": 50,
+                "line": 51,
                 "column": 42
               }
             },
@@ -6449,22 +6512,22 @@
           ],
           "loc": {
             "start": {
-              "line": 53,
+              "line": 54,
               "column": 4
             },
             "end": {
-              "line": 58,
+              "line": 59,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 59,
+                "line": 60,
                 "column": 4
               },
               "end": {
-                "line": 59,
+                "line": 60,
                 "column": 74
               }
             },
@@ -6578,6 +6641,30 @@
               "value": "A Node used to adjust the pan of the incoming signal.\nWrapper class for the native StereoPanner audio node."
             }
           ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
+            },
+            {
+              "type": "link",
+              "title": null,
+              "url": "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "https://developer.mozilla.org/en-US/docs/Web/API/StereoPannerNode"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "value": ")"
+            }
+          ]
         }
       ]
     },
@@ -6585,19 +6672,19 @@
       {
         "title": "example",
         "description": "const synth = new Dot.Synth(AC)\nconst panner = new Dot.StereoPanner(AC, { pan: 0.5 })\n\nDot.chain(synth, panner, AC.destination)",
-        "lineNumber": 4
+        "lineNumber": 7
       },
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 10,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 11,
+        "lineNumber": 14,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -6607,7 +6694,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 12,
+        "lineNumber": 15,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -6617,7 +6704,7 @@
       {
         "title": "param",
         "description": "Pan value [-1 for full left pan, 1 for full right pan] (default: 0)",
-        "lineNumber": 13,
+        "lineNumber": 16,
         "type": {
           "type": "NameExpression",
           "name": "Number"
@@ -6627,12 +6714,12 @@
       {
         "title": "params",
         "description": "pan - Node pan value",
-        "lineNumber": 14
+        "lineNumber": 17
       },
       {
         "title": "returns",
         "description": "Pan Node",
-        "lineNumber": 16,
+        "lineNumber": 19,
         "type": {
           "type": "NameExpression",
           "name": "Pan"
@@ -6645,18 +6732,18 @@
         "column": 0
       },
       "end": {
-        "line": 24,
+        "line": 27,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 25,
+          "line": 28,
           "column": 0
         },
         "end": {
-          "line": 58,
+          "line": 61,
           "column": 1
         }
       },
@@ -6666,7 +6753,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 10,
+        "lineNumber": 13,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -6681,7 +6768,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 11,
+        "lineNumber": 14,
         "description": {
           "type": "root",
           "children": [
@@ -6704,7 +6791,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 12,
+        "lineNumber": 15,
         "description": {
           "type": "root",
           "children": [
@@ -6727,7 +6814,7 @@
           {
             "title": "param",
             "name": "opts.pan",
-            "lineNumber": 13,
+            "lineNumber": 16,
             "description": {
               "type": "root",
               "children": [
@@ -6813,22 +6900,22 @@
           ],
           "loc": {
             "start": {
-              "line": 44,
+              "line": 47,
               "column": 4
             },
             "end": {
-              "line": 47,
+              "line": 50,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 48,
+                "line": 51,
                 "column": 4
               },
               "end": {
-                "line": 48,
+                "line": 51,
                 "column": 40
               }
             },
@@ -6932,22 +7019,22 @@
           ],
           "loc": {
             "start": {
-              "line": 51,
+              "line": 54,
               "column": 4
             },
             "end": {
-              "line": 56,
+              "line": 59,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 57,
+                "line": 60,
                 "column": 4
               },
               "end": {
-                "line": 57,
+                "line": 60,
                 "column": 72
               }
             },
@@ -7058,7 +7145,16 @@
           "children": [
             {
               "type": "text",
-              "value": "A Node used to adjust the shape of the incoming signal based on a waveshaping curve.\nWrapper class for the native WaveShaper audio node.\nFor more information, refer to the web audio api documentation.\n("
+              "value": "A Node used to adjust the shape of the incoming signal based on a waveshaping curve.\nWrapper class for the native WaveShaper audio node."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "For more information, refer to the web audio api documentation.\n("
             },
             {
               "type": "link",
@@ -7083,14 +7179,14 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": null,
         "name": "DotAudioNode"
       },
       {
         "title": "param",
         "description": "Audio context",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "type": {
           "type": "NameExpression",
           "name": "AudioContext"
@@ -7100,7 +7196,7 @@
       {
         "title": "param",
         "description": "Initialization options",
-        "lineNumber": 8,
+        "lineNumber": 9,
         "type": {
           "type": "NameExpression",
           "name": "Object"
@@ -7110,7 +7206,7 @@
       {
         "title": "param",
         "description": "Float32 array describing the distortion curve to apply to the signal  (default: null)",
-        "lineNumber": 9,
+        "lineNumber": 10,
         "type": {
           "type": "NameExpression",
           "name": "Float32Array"
@@ -7120,7 +7216,7 @@
       {
         "title": "param",
         "description": "The level of up-sampling that is applied before the wave shaping takes effect (default: 'none')",
-        "lineNumber": 10,
+        "lineNumber": 11,
         "type": {
           "type": "NameExpression",
           "name": "String"
@@ -7130,7 +7226,7 @@
       {
         "title": "returns",
         "description": "WaveShaper Node",
-        "lineNumber": 11,
+        "lineNumber": 12,
         "type": {
           "type": "NameExpression",
           "name": "WaveShaper"
@@ -7143,18 +7239,18 @@
         "column": 0
       },
       "end": {
-        "line": 21,
+        "line": 22,
         "column": 3
       }
     },
     "context": {
       "loc": {
         "start": {
-          "line": 22,
+          "line": 23,
           "column": 0
         },
         "end": {
-          "line": 66,
+          "line": 67,
           "column": 1
         }
       },
@@ -7164,7 +7260,7 @@
       {
         "title": "extends",
         "description": null,
-        "lineNumber": 6,
+        "lineNumber": 7,
         "type": null,
         "name": "DotAudioNode"
       }
@@ -7175,7 +7271,7 @@
       {
         "title": "param",
         "name": "AC",
-        "lineNumber": 7,
+        "lineNumber": 8,
         "description": {
           "type": "root",
           "children": [
@@ -7198,7 +7294,7 @@
       {
         "title": "param",
         "name": "opts",
-        "lineNumber": 8,
+        "lineNumber": 9,
         "description": {
           "type": "root",
           "children": [
@@ -7221,7 +7317,7 @@
           {
             "title": "param",
             "name": "opts.curve",
-            "lineNumber": 9,
+            "lineNumber": 10,
             "description": {
               "type": "root",
               "children": [
@@ -7244,7 +7340,7 @@
           {
             "title": "param",
             "name": "opts.oversample",
-            "lineNumber": 10,
+            "lineNumber": 11,
             "description": {
               "type": "root",
               "children": [
@@ -7330,22 +7426,22 @@
           ],
           "loc": {
             "start": {
-              "line": 40,
+              "line": 41,
               "column": 4
             },
             "end": {
-              "line": 43,
+              "line": 44,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 44,
+                "line": 45,
                 "column": 4
               },
               "end": {
-                "line": 44,
+                "line": 45,
                 "column": 42
               }
             },
@@ -7435,22 +7531,22 @@
           ],
           "loc": {
             "start": {
-              "line": 46,
+              "line": 47,
               "column": 4
             },
             "end": {
-              "line": 49,
+              "line": 50,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 50,
+                "line": 51,
                 "column": 4
               },
               "end": {
-                "line": 50,
+                "line": 51,
                 "column": 52
               }
             },
@@ -7541,22 +7637,22 @@
           ],
           "loc": {
             "start": {
-              "line": 53,
+              "line": 54,
               "column": 4
             },
             "end": {
-              "line": 56,
+              "line": 57,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 57,
+                "line": 58,
                 "column": 4
               },
               "end": {
-                "line": 57,
+                "line": 58,
                 "column": 51
               }
             },
@@ -7649,22 +7745,22 @@
           ],
           "loc": {
             "start": {
-              "line": 59,
+              "line": 60,
               "column": 4
             },
             "end": {
-              "line": 62,
+              "line": 63,
               "column": 7
             }
           },
           "context": {
             "loc": {
               "start": {
-                "line": 63,
+                "line": 64,
                 "column": 4
               },
               "end": {
-                "line": 65,
+                "line": 66,
                 "column": 5
               }
             },
