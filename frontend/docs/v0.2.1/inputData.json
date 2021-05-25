@@ -1,0 +1,644 @@
+[
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "A general-purpose Keyboard input class to give users a piano-like interface to interact with projects."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Uses A-; keys to play notes. The Z and X keys change the octave"
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const AC = new AudioContext()\nconst synth = new Dot.PolySynth(AC, { gainDecay: 0.4, gainSustain: 0 })\n\nsynth.connect(AC.destination)\n\nconst keyboard = new Dot.Keyboard({\n    onPress: (noteInfo) => {\n        // Start context when the user tries to play a note\n        if (AC.state === 'suspended') AC.resume()\n\n        synth.noteOn(noteInfo.fullNote)\n    },\n    onRelease: (noteInfo) => {\n        synth.noteOff(noteInfo.fullNote)\n    },\n})\n\n// Start keyboard listeners\nkeyboard.on()",
+        "lineNumber": 5
+      },
+      {
+        "title": "param",
+        "description": "Initialization options",
+        "lineNumber": 26,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "name": "opts"
+      },
+      {
+        "title": "param",
+        "description": "Octave setting for the keyboard (default: 4)",
+        "lineNumber": 27,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.octave"
+      },
+      {
+        "title": "param",
+        "description": "Velocity setting for the keyboard (default: 127)",
+        "lineNumber": 28,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.velocity"
+      },
+      {
+        "title": "param",
+        "description": "Callback to be called on key press (default: noOp)",
+        "lineNumber": 29,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.onPress"
+      },
+      {
+        "title": "param",
+        "description": "Callback to be called on key release (default: noOp)",
+        "lineNumber": 30,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        },
+        "name": "opts.onRelease"
+      },
+      {
+        "title": "returns",
+        "description": "Keyboard Input Class",
+        "lineNumber": 31,
+        "type": {
+          "type": "NameExpression",
+          "name": "Keyboard"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 10,
+        "column": 0
+      },
+      "end": {
+        "line": 42,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 0
+        },
+        "end": {
+          "line": 118,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/input/Keyboard.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "const AC = new AudioContext()\nconst synth = new Dot.PolySynth(AC, { gainDecay: 0.4, gainSustain: 0 })\n\nsynth.connect(AC.destination)\n\nconst keyboard = new Dot.Keyboard({\n    onPress: (noteInfo) => {\n        // Start context when the user tries to play a note\n        if (AC.state === 'suspended') AC.resume()\n\n        synth.noteOn(noteInfo.fullNote)\n    },\n    onRelease: (noteInfo) => {\n        synth.noteOff(noteInfo.fullNote)\n    },\n})\n\n// Start keyboard listeners\nkeyboard.on()"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "opts",
+        "lineNumber": 26,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Initialization options"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        },
+        "properties": [
+          {
+            "title": "param",
+            "name": "opts.octave",
+            "lineNumber": 27,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Octave setting for the keyboard (default: 4)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.velocity",
+            "lineNumber": 28,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Velocity setting for the keyboard (default: 127)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.onPress",
+            "lineNumber": 29,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Callback to be called on key press (default: noOp)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          },
+          {
+            "title": "param",
+            "name": "opts.onRelease",
+            "lineNumber": 30,
+            "description": {
+              "type": "root",
+              "children": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "type": "text",
+                      "value": "Callback to be called on key release (default: noOp)"
+                    }
+                  ]
+                }
+              ]
+            },
+            "type": {
+              "type": "NameExpression",
+              "name": "Number"
+            }
+          }
+        ],
+        "default": "{}"
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Keyboard Input Class"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Keyboard"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "Keyboard",
+    "kind": "class",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Start event listening for the keyboard."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [],
+          "loc": {
+            "start": {
+              "line": 57,
+              "column": 4
+            },
+            "end": {
+              "line": 59,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 60,
+                "column": 4
+              },
+              "end": {
+                "line": 63,
+                "column": 5
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/input/Keyboard.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "on",
+          "kind": "member",
+          "memberof": "Keyboard",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Keyboard",
+              "kind": "class"
+            },
+            {
+              "name": "on",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Keyboard#on"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Stop event listening for the keyboard."
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [],
+          "loc": {
+            "start": {
+              "line": 65,
+              "column": 4
+            },
+            "end": {
+              "line": 67,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 68,
+                "column": 4
+              },
+              "end": {
+                "line": 71,
+                "column": 5
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/input/Keyboard.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "off",
+          "kind": "member",
+          "memberof": "Keyboard",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Keyboard",
+              "kind": "class"
+            },
+            {
+              "name": "off",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Keyboard#off"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current octave"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Octave",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 74,
+              "column": 4
+            },
+            "end": {
+              "line": 77,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 78,
+                "column": 4
+              },
+              "end": {
+                "line": 78,
+                "column": 33
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/input/Keyboard.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Octave"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getOctave",
+          "kind": "member",
+          "memberof": "Keyboard",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Keyboard",
+              "kind": "class"
+            },
+            {
+              "name": "getOctave",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Keyboard#getOctave"
+        },
+        {
+          "description": {
+            "type": "root",
+            "children": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "type": "text",
+                    "value": "Get the current velocity"
+                  }
+                ]
+              }
+            ]
+          },
+          "tags": [
+            {
+              "title": "returns",
+              "description": "Velocity value",
+              "lineNumber": 2,
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "loc": {
+            "start": {
+              "line": 80,
+              "column": 4
+            },
+            "end": {
+              "line": 83,
+              "column": 7
+            }
+          },
+          "context": {
+            "loc": {
+              "start": {
+                "line": 84,
+                "column": 4
+              },
+              "end": {
+                "line": 84,
+                "column": 37
+              }
+            },
+            "file": "/Users/kjshanks/Documents/code_stuff/dot/src/input/Keyboard.js"
+          },
+          "augments": [],
+          "examples": [],
+          "implements": [],
+          "params": [],
+          "properties": [],
+          "returns": [
+            {
+              "description": {
+                "type": "root",
+                "children": [
+                  {
+                    "type": "paragraph",
+                    "children": [
+                      {
+                        "type": "text",
+                        "value": "Velocity value"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "title": "returns",
+              "type": {
+                "type": "NameExpression",
+                "name": "Number"
+              }
+            }
+          ],
+          "sees": [],
+          "throws": [],
+          "todos": [],
+          "yields": [],
+          "name": "getVelocity",
+          "kind": "member",
+          "memberof": "Keyboard",
+          "scope": "instance",
+          "members": {
+            "global": [],
+            "inner": [],
+            "instance": [],
+            "events": [],
+            "static": []
+          },
+          "path": [
+            {
+              "name": "Keyboard",
+              "kind": "class"
+            },
+            {
+              "name": "getVelocity",
+              "kind": "member",
+              "scope": "instance"
+            }
+          ],
+          "namespace": "Keyboard#getVelocity"
+        }
+      ],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "Keyboard",
+        "kind": "class"
+      }
+    ],
+    "namespace": "Keyboard"
+  }
+]

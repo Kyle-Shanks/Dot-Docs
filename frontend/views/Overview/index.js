@@ -5,3 +5,4 @@ export { default as CoreOverview } from './CoreOverview';
 export { default as EffectsOverview } from './EffectsOverview';
 export { default as InstrumentsOverview } from './InstrumentsOverview';
 export { default as SourcesOverview } from './SourcesOverview';
+export { default as InputsOverview } from './InputsOverview';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { withRouter, Switch, useLocation, useRouteMatch } from 'react-router-dom';
 import { Flex } from 'frontend/components/layout';
 import Sidebar from 'frontend/compounds/Sidebar';
-import { componentsData, coreData, effectsData, instrumentsData, sourcesData } from 'frontend/docs';
+import { componentsData, coreData, effectsData, instrumentsData, sourcesData, inputData } from 'frontend/docs';
 import DemoView from 'frontend/views/DemoView';
 import Examples from 'frontend/views/Examples';
 import Splash from 'frontend/views/Splash';
@@ -16,6 +16,7 @@ import {
     EffectsOverview,
     InstrumentsOverview,
     SourcesOverview,
+    InputsOverview,
 } from 'frontend/views/Overview';
 import {
     SPLASH_PATH,
@@ -27,6 +28,7 @@ import {
     EFFECTS_PATH,
     INSTRUMENTS_PATH,
     SOURCES_PATH,
+    INPUTS_PATH,
 } from 'frontend/util/constants';
 import { MainContent } from './MainPage.styled';
 
@@ -44,6 +46,7 @@ const MainPage = ({ className, theme, toggleTheme }) => {
     const componentsMatch = useRouteMatch(COMPONENTS_PATH);
     const coreMatch = useRouteMatch(CORE_PATH);
     const sourcesMatch = useRouteMatch(SOURCES_PATH);
+    const inputsMatch = useRouteMatch(INPUTS_PATH);
     const instrumentsMatch = useRouteMatch(INSTRUMENTS_PATH);
     const effectsMatch = useRouteMatch(EFFECTS_PATH);
 
@@ -97,6 +100,14 @@ const MainPage = ({ className, theme, toggleTheme }) => {
                             data={effectsData}
                             path={EFFECTS_PATH}
                             OverviewComponent={EffectsOverview}
+                        />
+                    )}
+                    {inputsMatch && (
+                        <SectionView
+                            className="InputsView"
+                            data={inputData}
+                            path={INPUTS_PATH}
+                            OverviewComponent={InputsOverview}
                         />
                     )}
 

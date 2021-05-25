@@ -7,6 +7,7 @@ import {
     EFFECTS_PATH,
     INSTRUMENTS_PATH,
     SOURCES_PATH,
+    INPUTS_PATH,
 } from 'frontend/util/constants';
 
 const sidebarLinkConfig = [
@@ -187,6 +188,16 @@ const sidebarLinkConfig = [
             {
                 label: 'Reverb',
                 path: '/Reverb',
+            },
+        ],
+    },
+    {
+        label: 'Inputs',
+        path: INPUTS_PATH,
+        links: [
+            {
+                label: 'Keyboard',
+                path: '/Keyboard',
             },
         ],
     },
