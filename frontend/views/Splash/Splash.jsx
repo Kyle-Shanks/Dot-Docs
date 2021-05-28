@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Editor } from 'frontend/components/data';
+import { Alert } from 'frontend/components/feedback';
 import { Container } from 'frontend/components/layout';
 import { Header, Link, Text } from 'frontend/components/typography';
 import { SPACING } from 'frontend/styles/constants';
 import { FadeContainer } from 'frontend/views/views.styled';
+import { ListContainer, ListItem } from './Splash.styled';
 
 const BASE_CLASS_NAME = 'Splash';
 
@@ -42,12 +44,43 @@ const Splash = ({ className }) => (
 
             <Header tag="h4" margin={`0 0 ${SPACING.m}`}>Installation</Header>
             <Container margin={`0 0 ${SPACING.xl}`}>
-                <Editor language="bash" content={installExample} />
+                <Editor language="bash" content={installExample} />
             </Container>
 
             <Header tag="h4" margin={`0 0 ${SPACING.m}`}>Import</Header>
             <Container margin={`0 0 ${SPACING.xl}`}>
                 <Editor content={importExample} />
+            </Container>
+
+            <Header tag="h4" margin={`0 0 ${SPACING.m}`}>Overview</Header>
+            <Container vGap={SPACING.m} margin={`0 0 ${SPACING.xl}`}>
+                <Text align="justify">
+                    Dot includes a collection of nodes, classes, and utility functions to make creating audio projects as easy as possible, while still remaining lightweight and flexible.
+                </Text>
+
+                <Text>A general overview of what is available:</Text>
+                <ListContainer>
+                    <ListItem>Wrappers for most native web audio api nodes (gain, filter, delay, etc.)</ListItem>
+                    <ListItem>ADSR envelope nodes (general-purpose envelope, gain envelope, filter envelope)</ListItem>
+                    <ListItem>Effect nodes (chorus, distortion, reverb, etc.)</ListItem>
+                    <ListItem>Source nodes for signal generation and modulation (oscillator, lfo, noise generator, etc.)</ListItem>
+                    <ListItem>Custom instruments for general use (MonoSynth, PolySynth, FMSynth, etc.)</ListItem>
+                    <ListItem>Pre-built keyboard input class (more input classes will be added in the future)</ListItem>
+                </ListContainer>
+            </Container>
+
+            <Header tag="h4" margin={`0 0 ${SPACING.m}`}>Nodes</Header>
+            <Container vGap={SPACING.m} margin={`0 0 ${SPACING.xl}`}>
+                <Text align="justify">All nodes are created using the following syntax:</Text>
+                <Editor content={`const node = new Dot.NodeName(AC, props)`} />
+                <Text>
+                    All DotAudioNodes have access to ::connect and ::disconnect methods to modify connections to other DotAudioNodes or native audio nodes.
+                </Text>
+                <Alert type="warning">
+                    <Text>
+                        Native audio nodes will not be able to connect to DotAudioNodes directly, but may be connected to params via the ::getParams method.
+                    </Text>
+                </Alert>
             </Container>
         </Container>
     </FadeContainer>
