@@ -158,6 +158,10 @@ const sidebarLinkConfig = [
         path: EFFECTS_PATH,
         links: [
             {
+                label: 'AutoPan',
+                path: '/AutoPan',
+            },
+            {
                 label: 'Chorus',
                 path: '/Chorus',
             },
@@ -188,6 +192,10 @@ const sidebarLinkConfig = [
             {
                 label: 'Reverb',
                 path: '/Reverb',
+            },
+            {
+                label: 'Tremolo',
+                path: '/Tremolo',
             },
         ],
     },
