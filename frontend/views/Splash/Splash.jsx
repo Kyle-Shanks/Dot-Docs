@@ -78,7 +78,7 @@ const Splash = ({ className }) => (
                 </Text>
                 <Alert type="warning">
                     <Text>
-                        Native audio nodes will not be able to connect to DotAudioNodes directly, but may be connected to params via the ::getParams method.
+                        Native audio nodes will not be able to connect to DotAudioNodes directly, but may be connected to params via the ::getParam and ::getParams methods.
                     </Text>
                 </Alert>
             </Container>

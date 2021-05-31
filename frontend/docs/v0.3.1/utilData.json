@@ -1,0 +1,426 @@
+[
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Connect a series of nodes together."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "const AC = new AudioContext()\nconst synth = new Dot.Synth(AC)\nconst chorus = new Dot.Chorus(AC, { amount: 0.2 })\n\nDot.chain(synth, chorus, AC.destination)",
+        "lineNumber": 3
+      },
+      {
+        "title": "param",
+        "description": "Nodes to connect",
+        "lineNumber": 10,
+        "type": {
+          "type": "RestType",
+          "expression": {
+            "type": "UnionType",
+            "elements": [
+              {
+                "type": "NameExpression",
+                "name": "DotAudioNode"
+              },
+              {
+                "type": "NameExpression",
+                "name": "AudioNode"
+              },
+              {
+                "type": "NameExpression",
+                "name": "AudioParam"
+              }
+            ]
+          }
+        },
+        "name": "nodes"
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 5,
+        "column": 0
+      },
+      "end": {
+        "line": 16,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 23,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/util/util.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "const AC = new AudioContext()\nconst synth = new Dot.Synth(AC)\nconst chorus = new Dot.Chorus(AC, { amount: 0.2 })\n\nDot.chain(synth, chorus, AC.destination)"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "nodes",
+        "lineNumber": 10,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Nodes to connect"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "RestType",
+          "expression": {
+            "type": "UnionType",
+            "elements": [
+              {
+                "type": "NameExpression",
+                "name": "DotAudioNode"
+              },
+              {
+                "type": "NameExpression",
+                "name": "AudioNode"
+              },
+              {
+                "type": "NameExpression",
+                "name": "AudioParam"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "chain",
+    "kind": "constant",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "chain",
+        "kind": "constant"
+      }
+    ],
+    "namespace": "chain"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Get the frequency of the given note."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "Dot.getNoteFrequency('A4') // => 440\nDot.getNoteFrequency('A2') // => 110",
+        "lineNumber": 3
+      },
+      {
+        "title": "param",
+        "description": "Note",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "note"
+      },
+      {
+        "title": "returns",
+        "description": "Note frequency",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 35,
+        "column": 0
+      },
+      "end": {
+        "line": 44,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 0
+        },
+        "end": {
+          "line": 48,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/util/util.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "Dot.getNoteFrequency('A4') // => 440\nDot.getNoteFrequency('A2') // => 110"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "note",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Note"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Note frequency"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Number"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "getNoteFrequency",
+    "kind": "constant",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "getNoteFrequency",
+        "kind": "constant"
+      }
+    ],
+    "namespace": "getNoteFrequency"
+  },
+  {
+    "description": {
+      "type": "root",
+      "children": [
+        {
+          "type": "paragraph",
+          "children": [
+            {
+              "type": "text",
+              "value": "Get full information about a note."
+            }
+          ]
+        }
+      ]
+    },
+    "tags": [
+      {
+        "title": "example",
+        "description": "Dot.parseNote('A4')\n// => { fullNote: 'A4', note: 'A', octave: 4, frequency: 440, midi: 69 }",
+        "lineNumber": 3
+      },
+      {
+        "title": "param",
+        "description": "Note",
+        "lineNumber": 7,
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        },
+        "name": "note"
+      },
+      {
+        "title": "returns",
+        "description": "Note information",
+        "lineNumber": 8,
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        }
+      }
+    ],
+    "loc": {
+      "start": {
+        "line": 50,
+        "column": 0
+      },
+      "end": {
+        "line": 59,
+        "column": 3
+      }
+    },
+    "context": {
+      "loc": {
+        "start": {
+          "line": 60,
+          "column": 0
+        },
+        "end": {
+          "line": 71,
+          "column": 1
+        }
+      },
+      "file": "/Users/kjshanks/Documents/code_stuff/dot/src/util/util.js"
+    },
+    "augments": [],
+    "examples": [
+      {
+        "description": "Dot.parseNote('A4')\n// => { fullNote: 'A4', note: 'A', octave: 4, frequency: 440, midi: 69 }"
+      }
+    ],
+    "implements": [],
+    "params": [
+      {
+        "title": "param",
+        "name": "note",
+        "lineNumber": 7,
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Note"
+                }
+              ]
+            }
+          ]
+        },
+        "type": {
+          "type": "NameExpression",
+          "name": "String"
+        }
+      }
+    ],
+    "properties": [],
+    "returns": [
+      {
+        "description": {
+          "type": "root",
+          "children": [
+            {
+              "type": "paragraph",
+              "children": [
+                {
+                  "type": "text",
+                  "value": "Note information"
+                }
+              ]
+            }
+          ]
+        },
+        "title": "returns",
+        "type": {
+          "type": "NameExpression",
+          "name": "Object"
+        }
+      }
+    ],
+    "sees": [],
+    "throws": [],
+    "todos": [],
+    "yields": [],
+    "name": "parseNote",
+    "kind": "constant",
+    "members": {
+      "global": [],
+      "inner": [],
+      "instance": [],
+      "events": [],
+      "static": []
+    },
+    "path": [
+      {
+        "name": "parseNote",
+        "kind": "constant"
+      }
+    ],
+    "namespace": "parseNote"
+  }
+]
