@@ -15,10 +15,10 @@ const sidebarLinkConfig = [
         label: 'Getting Started',
         path: '',
         links: [
-            // {
-            //     label: 'Overview',
-            //     path: OVERVIEW_PATH,
-            // },
+            {
+                label: 'Overview',
+                path: OVERVIEW_PATH,
+            },
             {
                 label: 'Examples',
                 path: EXAMPLES_PATH,

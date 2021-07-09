@@ -55,7 +55,7 @@ const Sidebar = ({ className, theme, toggleTheme }) => {
                 <Flex align="center" justify="space-between" margin={`0 ${SPACING.m} ${SPACING.s}`}>
                     <Flex align="baseline" gap={SPACING.xs}>
                         <HeaderLink tag="h3" onClick={() => goToPath(SPLASH_PATH)}>Dot</HeaderLink>
-                        <Text fontSize={FONT_SIZE.ml}>v0.3.1</Text>
+                        <Text fontSize={FONT_SIZE.ml}>v0.3.2</Text>
                     </Flex>
                     <Button size="icon" variation="tertiary" onClick={toggleTheme}>
                         <Icon icon={theme === LIGHT ? 'Moon' : 'Sun'} />
